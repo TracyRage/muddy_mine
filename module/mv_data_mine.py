@@ -42,8 +42,8 @@ class ExtractData:
         return self.texts, self.s2orc_ids
 
     def get_taxonomy(
-            self,
-            taxa_rank: str) -> Generator[Dict[str, List[str]], None, None]:
+            self, taxa_rank: str,
+            domain: str) -> Generator[Dict[str, List[str]], None, None]:
         """Mine taxonomic data from selected texts"""
         start = typer.style('Extracting taxonomy: ', bold=True)
         taxa_message = typer.style(taxa_rank,
@@ -51,8 +51,8 @@ class ExtractData:
                                    fg=typer.colors.GREEN,
                                    bold=True)
         typer.echo(start + taxa_message)
-        for text in self.texts:
-            yield self._build_dict(self._extract_taxa(text, taxa_rank),
+        for text in self.texts[:60]:
+            yield self._build_dict(self._extract_taxa(text, taxa_rank, domain),
                                    taxa_rank)
 
     def get_mv_data(
@@ -69,10 +69,11 @@ class ExtractData:
             yield self._build_dict(
                 self._extract_mv_data(text, terminology_list), dict_key)
 
-    def _extract_taxa(self, text: str, taxa_rank: str) -> List[str]:
+    def _extract_taxa(self, text: str, taxa_rank: str,
+                      domain: str) -> List[str]:
         """Extract TAXON tokens from selected texts"""
         tax_class = SynTaxaDict().taxonomy.get('tax')
-        taxonomy = tax_class.get_descendants(taxa_rank)
+        taxonomy = tax_class.get_descendants(domain, taxa_rank)
         nlp = spacy.load(self.core_model)
         doc = nlp(text)
         return [

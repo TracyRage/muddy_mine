@@ -54,9 +54,11 @@ class SynTax:
     def __init__(self):
         self.ncbi = NCBITaxa()
 
-    def get_descendants(self, taxon_rank: str) -> Generator[str, None, None]:
+    def get_descendants(self, domain: str,
+                        taxon_rank: str) -> Generator[str, None, None]:
         """Fetch all the available taxids"""
-        taxids = self.ncbi.get_descendant_taxa('Bacteria',
+        # Domain must be in title case
+        taxids = self.ncbi.get_descendant_taxa(domain,
                                                rank_limit=taxon_rank,
                                                collapse_subspecies=True)
         taxa_names = (self.ncbi.get_taxid_translator([taxa])

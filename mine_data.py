@@ -33,13 +33,13 @@ if __name__ == "__main__":
         s2orc_dfs = [record.to_df(s2orc_item) for s2orc_item in s2orc_items]
         return record.merge_dfs(*s2orc_dfs)
 
-    def mine_taxonomy(taxa_rank: str, level: str):
+    def mine_taxonomy(taxa_rank: str, level: str, domain: str):
         """Mine taxonomic data (Helper #1)"""
         table = record.read_table
         record.get_data(table, level)
-        chain_function = compose(record.get_taxonomy, record.map_s2orc_id,
-                                 record.to_df)
-        return chain_function(taxa_rank)
+        taxa_dict = record.get_taxonomy(taxa_rank, domain)
+        chain_function = compose(record.map_s2orc_id, record.to_df)
+        return chain_function(taxa_dict)
 
     # Write to a file
     def write_data(df: pd.DataFrame, prefix: str, output_file: str):
@@ -53,19 +53,20 @@ if __name__ == "__main__":
         write_data(mine_data(level, terminology), file_name, output_file)
 
     # Extract physical / chemical data (abstract level)
-    mining_pipeline('abstract', chemistry, 'chemistry_abstract', mv_output)
-    mining_pipeline('abstract', geology, 'geology_abstract', mv_output)
-    mining_pipeline('abstract', mud_volcano, 'mv_abstract', mv_output)
-    mining_pipeline('abstract', methods, 'methods_abstract', mv_output)
+    # mining_pipeline('abstract', chemistry, 'chemistry_abstract', mv_output)
+    # mining_pipeline('abstract', geology, 'geology_abstract', mv_output)
+    # mining_pipeline('abstract', mud_volcano, 'mv_abstract', mv_output)
+    # mining_pipeline('abstract', methods, 'methods_abstract', mv_output)
 
     # Extract taxonomic data (abstract level)
     taxa_result = [
-        mine_taxonomy('phylum', 'abstract'),
-        mine_taxonomy('class', 'abstract'),
-        mine_taxonomy('order', 'abstract'),
-        mine_taxonomy('family', 'abstract'),
-        mine_taxonomy('genus', 'abstract'),
-        mine_taxonomy('species', 'abstract')
+        # mine_taxonomy(taxa_rank='phylum', domain='Archaea', level='abstract'),
+        mine_taxonomy(taxa_rank='class', domain='Archaea', level='abstract'),
+        mine_taxonomy(taxa_rank='order', domain='Archaea', level='abstract'),
+        mine_taxonomy(taxa_rank='family', domain='Archaea', level='abstract'),
+        mine_taxonomy(taxa_rank='genus', domain='Archaea', level='abstract'),
+        # mine_taxonomy(taxa_rank='species', domain='Archaea', level='abstract'),
     ]
 
-    write_data(record.merge_dfs(*taxa_result), 'taxonomy', taxa_output)
+    write_data(record.merge_dfs(*taxa_result), 'archaea_taxonomy_abstract',
+               taxa_output)
