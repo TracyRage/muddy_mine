@@ -1,4 +1,4 @@
-from fastcore.utils import parallel  # type: ignore
+from fastcore.utils import parallel, store_attr  # type: ignore
 from typing import Generator, List
 import click_spinner  # type: ignore
 from pathlib import Path
@@ -14,9 +14,8 @@ class GettingPDFs:
     to the papers which are mainly focused on mud volcanoes"""
     def __init__(self, input_file: str, archive_paths: str,
                  extracted_output: str) -> None:
-        self.input_file = Path(input_file)
+        store_attr('input_file, extracted_output')
         self.archive_paths = Path(archive_paths).glob('**/*.gz')
-        self.extracted_output = Path(extracted_output)
 
     @property
     def open_input(self) -> List[str]:
@@ -42,7 +41,7 @@ class GettingPDFs:
         """Helper for parallel_process method (append articles
         metadata to a new jsonl file)"""
         final_list = list(article_generator)
-        with jsonlines.open(str(self.extracted_output), 'a') as f:
+        with jsonlines.open(self.extracted_output, 'a') as f:
             [f.write(article) for article in final_list]
 
     def parallel_process(self, interests_articles: List[Generator]) -> None:

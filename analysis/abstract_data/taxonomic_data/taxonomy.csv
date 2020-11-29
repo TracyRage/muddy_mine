@@ -1,0 +1,107 @@
+,s2orc_id,phylum,class,order,family,genus,species
+0,378075,-,-,-,-,-,-
+1,423291,-,-,-,-,"['Pantoea (1)', 'Exiguobacterium (1)']",-
+2,609893,-,-,-,-,-,-
+3,818482,-,-,-,-,-,-
+4,1587067,-,-,-,['Desulfobacteraceae (1)'],-,-
+5,2118101,-,-,-,-,-,-
+6,2216104,-,['Epsilonproteobacteria (2)'],-,-,"['Sulfurovum (2)', 'Arcobacter (1)', 'Sulfurimonas (1)']",-
+7,2449122,-,['Gammaproteobacteria (1)'],-,-,-,-
+8,2829093,-,-,-,-,-,-
+9,3128887,-,-,-,-,-,-
+10,3261826,-,-,-,-,-,-
+11,4395526,-,-,-,-,-,-
+12,4430700,-,-,-,-,-,-
+13,4773405,-,-,-,-,-,-
+14,4841270,-,-,-,['Desulfobacteraceae (1)'],-,-
+15,4984670,-,-,-,-,-,-
+16,5665855,-,-,-,-,-,-
+17,6153701,-,-,-,-,-,-
+18,6384919,-,-,-,-,-,-
+19,7097552,-,-,-,-,-,-
+20,7907279,-,-,-,-,-,-
+21,8249528,-,-,-,-,-,-
+22,8819857,-,-,-,-,"['Arcobacter (3)', 'Leptothrix (1)']",-
+23,9277299,-,-,-,-,-,-
+24,9307972,"['Proteobacteria (2)', 'Actinobacteria (1)', 'Fusobacteria (1)']","['Actinobacteria (1)', 'Deltaproteobacteria (1)']",['Desulfuromonadales (1)'],-,-,-
+25,9382611,-,-,['Desulfuromonadales (1)'],-,-,-
+26,9590844,-,-,-,-,-,-
+27,10052410,-,-,-,-,-,-
+28,10441501,-,-,-,-,-,-
+29,10758220,-,-,-,-,"['Leucothrix (1)', 'Thiothrix (2)', 'Thioploca (1)', 'Beggiatoa (1)']",-
+30,10785502,-,['Gammaproteobacteria (1)'],-,-,-,-
+31,12345051,-,-,-,-,-,-
+32,12428390,-,-,-,-,-,-
+33,12594595,-,-,-,-,-,-
+34,13303128,-,-,-,-,-,-
+35,13438555,-,-,-,-,"['Methylobacter (1)', 'Methylophaga (1)', 'Beggiatoa (2)', 'Desulfobulbus (1)']",-
+36,14173406,-,-,-,-,-,-
+37,14369402,-,"['Alphaproteobacteria (1)', 'Gammaproteobacteria (1)']",['Methylococcales (1)'],['Flavobacteriaceae (1)'],-,-
+38,14583627,-,-,-,-,-,-
+39,14676493,['Proteobacteria (1)'],-,-,-,-,-
+40,14982203,-,-,-,-,-,-
+41,15514304,-,-,-,-,-,-
+42,16773456,-,-,-,-,-,-
+43,16888850,-,-,-,-,-,-
+44,17208459,-,-,-,-,-,-
+45,18110353,-,-,-,-,-,-
+46,19286940,-,-,-,-,-,-
+47,19304315,-,-,-,-,-,-
+48,19394643,-,-,-,-,-,-
+49,19646536,-,-,-,-,-,-
+50,20023799,-,['Deltaproteobacteria (3)'],-,['Desulfobulbaceae (1)'],-,-
+51,20382895,-,-,-,-,-,-
+52,20561520,-,['Alphaproteobacteria (1)'],['Rhizobiales (2)'],['Rhodobiaceae (1)'],"['Amorphus (2)', 'Phyllobacterium (1)', 'Bauldia (1)', 'Lutibaculum (1)']",-
+53,20646286,['Actinobacteria (1)'],['Actinobacteria (1)'],['Spirochaetales (1)'],-,-,-
+54,20677516,-,-,-,-,-,-
+55,21490211,-,-,-,-,-,-
+56,21653548,-,-,-,-,-,-
+57,22078593,-,-,-,-,-,-
+58,22414992,-,-,-,-,-,-
+59,23169780,-,['Deltaproteobacteria (1)'],-,-,['Desulfobulbus (1)'],-
+60,23583751,-,-,-,-,-,-
+61,24236881,"['Proteobacteria (1)', 'Firmicutes (1)', 'Bacteroidetes (1)']",-,-,-,-,-
+62,24389953,-,-,-,-,-,-
+63,24825330,"['Proteobacteria (2)', 'Actinobacteria (1)']",['Actinobacteria (1)'],-,-,-,-
+64,24860900,-,-,-,-,['Marinobacter (3)'],-
+65,24969095,-,-,-,-,"['Nocardiopsis (3)', 'Streptomyces (1)']",-
+66,25275226,-,-,-,-,-,-
+67,25312939,-,-,-,-,-,-
+68,25374479,-,-,-,-,-,-
+69,25614269,['Actinobacteria (1)'],['Actinobacteria (1)'],-,-,-,-
+70,25787557,-,-,-,-,-,-
+71,26654892,-,-,-,-,['Belliella (4)'],-
+72,26732615,-,-,-,-,-,-
+73,28363766,-,-,-,-,-,-
+74,31297440,-,-,-,-,-,-
+75,31592443,-,-,-,-,-,-
+76,31721641,-,-,-,-,-,-
+77,33653187,-,-,-,-,-,-
+78,33792127,-,-,-,-,-,-
+79,34107345,-,-,-,-,['Lutibaculum (2)'],-
+80,34539523,-,-,-,-,['Geobacillus (2)'],-
+81,34712783,-,-,-,-,['Thiomargarita (6)'],-
+82,35116371,-,-,-,['Flammeovirgaceae (1)'],"['Marivirga (3)', 'Cesiribacter (2)']",-
+83,38728909,-,['Alphaproteobacteria (1)'],['Rhizobiales (2)'],-,"['Tepidamorphus (2)', 'Bauldia (1)', 'Afifella (2)', 'Amorphus (2)', 'Rhodobium (1)', 'Lutibaculum (2)']",-
+84,40404753,-,-,-,-,-,-
+85,42717529,-,-,-,-,['Cesiribacter (1)'],-
+86,45978787,-,['Epsilonproteobacteria (1)'],-,-,-,-
+87,46131370,-,-,-,-,-,-
+88,46855510,-,-,-,-,-,-
+89,49214293,-,-,-,-,-,-
+90,52112134,['Chloroflexi (1)'],-,"['Methylococcales (1)', 'Desulfobacterales (1)']",-,-,-
+91,52131258,['Proteobacteria (1)'],-,-,-,-,-
+92,53183928,-,-,-,-,-,-
+93,91812618,-,-,-,-,-,-
+94,195185567,-,['Gammaproteobacteria (1)'],-,-,-,-
+95,204849492,-,-,-,-,['Sulfurimonas (4)'],-
+96,205788630,['Proteobacteria (1)'],"['Gammaproteobacteria (1)', 'Deltaproteobacteria (1)']",-,-,-,-
+97,205982792,-,-,-,-,-,-
+98,206164693,-,-,['Actinomycetales (1)'],['Intrasporangiaceae (1)'],['Aquipuribacter (5)'],-
+99,206723511,-,-,-,-,-,-
+100,207696802,-,-,-,-,-,-
+101,207963124,['Proteobacteria (1)'],-,-,-,-,-
+102,208279838,-,-,['Methylococcales (2)'],-,-,-
+103,209474384,-,-,-,"['Vibrionaceae (1)', 'Enterobacteriaceae (1)', 'Shewanellaceae (1)', 'Clostridiaceae (1)']",-,-
+104,210195508,-,-,-,-,-,-
+105,210914727,-,-,-,"['Enterobacteriaceae (1)', 'Methylobacteriaceae (1)', 'Bradyrhizobiaceae (1)', 'Oxalobacteraceae (1)', 'Comamonadaceae (1)', 'Sphingomonadaceae (1)']",-,-
