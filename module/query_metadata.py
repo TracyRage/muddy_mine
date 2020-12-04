@@ -11,8 +11,9 @@ import json
 
 
 class GettingPMID:
-    """Class dedicated to the collection of the PMIDs, related
-    to the papers which are mainly focused on mud volcanoes"""
+    """Synopsis: GettingPMID class is dedicated to the collection of the
+    PMIDs (from Entrez) related to the papers which are mainly focused
+    on mud volcanoes (default value)"""
     def __init__(self,
                  email: str,
                  archive_paths: str,
@@ -23,15 +24,17 @@ class GettingPMID:
         self.extracted_output = Path(extracted_output)
 
     @property
-    def get_pmid(self):
-        """Fetch PMIDs of mud volcano articles"""
+    def get_pmid(self) -> List[str]:
+        """Synopsis: Fetch PMIDs of mud volcano articles (from Entrez)
+        Input: Pubmed query string e.g. mud[TIAB] AND volcano[TIAB]
+        Output: List of PMIDs"""
         # Header comment
         typer.secho('Getting PMIDs of iterest', bold=True)
         header_1 = typer.style("Query: ", bold=True)
         query = typer.style(f"{self.query}")
         typer.echo(header_1 + query)
         # Function per se
-        Entrez.email: str = self.email
+        Entrez.email = self.email
         with Entrez.esearch(db='pubmed',
                             term=self.query,
                             idtype='acc',
@@ -48,23 +51,25 @@ class GettingPMID:
             return pmids
 
     def get_articles(self, pmid_list: List[str]) -> List[Generator]:
-        """Process each archive and extract aricles of
-        interest based on PMIDs fetched from Pubmed"""
+        """Synopsis: Process each  S2ORC archive and extract aricles of
+        interest based on PMIDs fetched from Pubmed
+        Input: List of PMIDs
+        Output: Get articles from metadata S2ORC archives"""
         interests = [
             self._open_s2rc(str(archive), pmid_list)
             for archive in self.archive_paths
         ]
         return interests
 
-    def _get_art_list(self, article_generator: Generator):
-        """Helper for parallel_process method (append articles
-        metadata to a new jsonl file)"""
+    def _get_art_list(self, article_generator: Generator) -> None:
+        """Dependency: Helper for parallel_process method
+        Synopsis: Append articles metadata to a new jsonl file"""
         final_list = list(article_generator)
         with jsonlines.open(str(self.extracted_output), 'a') as f:
             [f.write(article) for article in final_list]
 
     def parallel_process(self, interests_articles: List[Generator]):
-        """Extract articles of inteteres from archives in parallel"""
+        """Synopsis: Extract articles of inteteres from archives in parallel"""
         typer.secho('Working with archives (it could take a while): ',
                     bold=True)
         with click_spinner.spinner():
@@ -74,7 +79,9 @@ class GettingPMID:
                      n_workers=4)
 
     def _open_s2rc(self, archive, pmid_list: List[str]) -> Generator:
-        """Open individual S2ORC archive (metadata)"""
+        """Dependency: Helper for get method
+        Synopsis: Open individual S2ORC archive metadata
+        """
         try:
             with gzip.open(archive) as f:
                 articles = (json.loads(article) for article in f)

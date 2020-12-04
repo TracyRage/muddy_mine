@@ -1,14 +1,20 @@
-from .get_terms import SynChem, SynMud, SynGeo, SynMethod, SynTax
+from .get_terms import SynChem, SynMud, SynGeo  # type: ignore
+from .get_terms import SynMethod, SynTax  # type: ignore
 from dataclasses import dataclass, field
 from typing import Dict
+"""Synopsis: get_dict_terms module aggregates all the Syn* dataclasses
+into five distinct fields of interests: <chemistry>, <methods>,
+<geology>, <mud> volcanoes, and taxonomy."""
 
 
 def default_field(obj):
+    """Synopsis: Generic helper function used for aggregation"""
     return field(default_factory=lambda: obj)
 
 
 @dataclass
 class SynChemDict:
+    """Synopsis: generalization of SynChem dataclass"""
     chemistry: Dict = default_field({
         'sulfate': SynChem().sulfate,
         'sodium': SynChem().sodium,
@@ -48,6 +54,7 @@ class SynChemDict:
 
 @dataclass
 class SynGeoDict:
+    """Synopsis: Generalisation of SynGeo dataclass"""
     geology: Dict = default_field({
         'geo_time': SynGeo().geo_time,
         'minerals': SynGeo().minerals,
@@ -56,6 +63,7 @@ class SynGeoDict:
 
 @dataclass
 class SynMudDict:
+    """Synopsis: Generalisation of SynMud dataclass"""
     mud: Dict = default_field({
         'place': SynMud().place,
         'morphology': SynMud().morphology,
@@ -69,6 +77,7 @@ class SynMudDict:
 
 @dataclass
 class SynMethodDict:
+    """Synopsis: Generalisation of SynMethod dataclass"""
     methods: Dict = default_field({
         'mineralogy': SynMethod().mineralogy,
         'pcr': SynMethod().pcr,
@@ -87,4 +96,5 @@ class SynMethodDict:
 
 @dataclass
 class SynTaxaDict:
+    """Synopsis: Generalisation of SynTax class"""
     taxonomy: Dict = default_field({'tax': SynTax()})

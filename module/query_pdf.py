@@ -10,8 +10,8 @@ import json
 
 
 class GettingPDFs:
-    """Class dedicated to the collection of the PMIDs, related
-    to the papers which are mainly focused on mud volcanoes"""
+    """Synopsis: GettingPDFs class is dedicated to the collection
+    of the entries from S2ORC pdf archives based on S2ORC ids"""
     def __init__(self, input_file: str, archive_paths: str,
                  extracted_output: str) -> None:
         store_attr('input_file, extracted_output')
@@ -19,8 +19,11 @@ class GettingPDFs:
 
     @property
     def open_input(self) -> List[str]:
-        """Read S2ORC metadata jsonl file from previous S2ORC
-        metadata scan"""
+        """Synopsis: Read S2ORC metadata jsonl file from previous S2ORC
+        metadata scan
+        Input: jsonl file with all the metadata extracted from S2ORC metadata
+        archives which are related to your query of interest (mud volcano)
+        Output: List with all the relevant S2ORC ids"""
         with open(self.input_file) as f:
             articles = (json.loads(article) for article in f)
             papers_ids = [
@@ -29,8 +32,18 @@ class GettingPDFs:
             return papers_ids
 
     def get_articles(self, ids_list: List[str]) -> List[Generator]:
-        """Process each archive and extract aricles of
-        interest based on paper_ids fetched from S2ORC metadata"""
+        """Synopsis: Process each S2ORC pdf archive and extract
+        entries of interest based on S2ORC ids fetched from
+        S2ORC metadata
+        Input: List of S2ORC ids
+        Output: List of generators which contain S2ORC pdf entries"""
+        typer.secho('Extracting pdf entries from S2ORC', bold=True)
+        first = typer.style('Number of s2orc ids to search for', bold=True)
+        second = typer.style(f"{len(ids_list)}",
+                             blink=True,
+                             fg=typer.colors.GREEN,
+                             bold=True)
+        typer.echo(first + second)
         interests = [
             self._open_s2rc(str(archive), ids_list)
             for archive in self.archive_paths
@@ -38,14 +51,15 @@ class GettingPDFs:
         return interests
 
     def _get_art_list(self, article_generator: Generator) -> None:
-        """Helper for parallel_process method (append articles
-        metadata to a new jsonl file)"""
+        """Dependency: Helper for parallel_process method
+        Synopsis: Append articles pdf data to a new jsonl file"""
         final_list = list(article_generator)
         with jsonlines.open(self.extracted_output, 'a') as f:
             [f.write(article) for article in final_list]
 
     def parallel_process(self, interests_articles: List[Generator]) -> None:
-        """Extract articles of inteteres from archives in parallel"""
+        """Synopsis: Extract pdf entries of interest
+        from S2ORC pdf archives in parallel"""
         typer.secho('Working with archives (it could take a while): ',
                     bold=True)
         with click_spinner.spinner():
@@ -55,7 +69,8 @@ class GettingPDFs:
                      n_workers=4)
 
     def _open_s2rc(self, archive, ids_list: List[str]) -> Generator:
-        """Open individual S2ORC archive (pdf_parse)"""
+        """Dependency: Helper for get_articles method
+        Synopsis: Open individual S2ORC pdf archive"""
         try:
             with gzip.open(archive) as f:
                 articles = (json.loads(article) for article in f)
