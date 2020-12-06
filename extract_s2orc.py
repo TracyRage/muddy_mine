@@ -2,7 +2,7 @@ from module.extract_data import ExtractInfo
 import argparse
 
 if __name__ == "__main__":
-    # Design parser
+    # Design argument parser
     parser = argparse.ArgumentParse(
         description='Extract fields of interest from S2ORC jsonl files')
     parser.add_argument('-im',

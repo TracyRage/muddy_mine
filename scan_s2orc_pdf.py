@@ -2,7 +2,7 @@ from module.query_pdf import GettingPDFs
 import argparse
 
 if __name__ == "__main__":
-    # Design parser
+    # Design arguments parser
     parser = argparse.ArgumentParse(
         description="Get pdf entries from S2ORC pdf archives")
     parser.add_argument('-i',

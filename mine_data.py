@@ -1,4 +1,4 @@
-from module.mine_data import MineData
+from module.mine_data_pipeline import MineData
 import argparse
 
 if __name__ == "__main__":
@@ -20,7 +20,7 @@ if __name__ == "__main__":
                         metavar='',
                         required=True,
                         help='Provide output for taxonomic specific data')
-    args = parser.parser_args()
+    args = parser.parse_args()
 
     # Init MineData class (dedicated to data mining)
     record = MineData(args.input_table, args.output_mv, args.output_taxa)
@@ -29,11 +29,11 @@ if __name__ == "__main__":
     record.load_mining
 
     # Mine abstract chemical data
-    record.mine_chemical_data('abstract')
+    # record.mine_chemical_data('abstract')
 
     # Mine abstract Bacterial and Archaea data
-    record.mine_taxonomic_data('abstract', 'Bacteria', 'abs_bacteria')
-    record.mine_taxonomic_data('abstract', 'Archaea', 'abs_archaea')
+    # record.mine_taxonomic_data('abstract', 'Bacteria', 'abs_bacteria')
+    # record.mine_taxonomic_data('abstract', 'Archaea', 'abs_archaea')
 
     # Mine article chemical data
     record.mine_chemical_data('text')
