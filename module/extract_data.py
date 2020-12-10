@@ -71,18 +71,3 @@ class ExtractInfo:
         """Synopsis: Write extracted fields of interest to files"""
         with js.open(output_file, 'a') as f:
             [f.write(article) for article in data]
-
-
-if __name__ == "__main__":
-    input_pdf = '../analysis/mv_pdf.jsonl'
-    input_meta = '../analysis/mv_metadata.jsonl'
-    output_meta = '../analysis/mv_meta_extracted.jsonl'
-    output_pdf = '../analysis/mv_pdf_extracted.jsonl'
-    record = ExtractInfo(input_meta, input_pdf, output_meta, output_pdf)
-    articles_pdf = record.read_jsonl(record.input_pdf)
-    body_text = record.extract_body_text(articles_pdf)
-    articles_meta = record.read_jsonl(record.input_meta)
-    meta_extracted = record.extract_metadata(articles_meta)
-    body_extracted = record.extract_body_text(articles_pdf)
-    write_meta = record.write_to_files(meta_extracted, output_meta)
-    write_pdf = record.write_to_files(body_extracted, output_pdf)

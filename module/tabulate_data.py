@@ -1,5 +1,6 @@
 from fastcore.utils import store_attr  # type: ignore
 import pandas as pd  # type: ignore
+import typer
 
 
 class TabulateData:
@@ -18,11 +19,14 @@ class TabulateData:
     def merge_df(self, meta_df: pd.DataFrame,
                  pdf_df: pd.DataFrame) -> pd.DataFrame:
         """Synopsis: Merge metadata and pdf_parse data"""
-        raw_df = meta_df.merge(pdf_df, on='s2orc_id', how='left')
-        return raw_df.reindex(columns=[
-            's2orc_id', 'title', 'abstract', 'text', 'authors', 'year', 'pmid',
-            'doi'
-        ])
+        try:
+            raw_df = meta_df.merge(pdf_df, on='s2orc_id', how='left')
+            return raw_df.reindex(columns=[
+                's2orc_id', 'title', 'abstract', 'text', 'authors', 'year',
+                'pmid', 'doi'
+            ])
+        except ValueError:
+            typer.secho('Argument with inappropriate value', bold=True)
 
     def write_table(self, merged_df: pd.DataFrame):
         """Synopsis: Write merged dataframe to a file"""

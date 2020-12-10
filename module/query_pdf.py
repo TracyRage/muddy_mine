@@ -83,13 +83,3 @@ class GettingPDFs:
                                           fg=typer.colors.RED,
                                           bold=True)
             typer.echo(header + invalid_archive)
-
-
-if __name__ == "__main__":
-    input_file = '../analysis/mv_metadata.jsonl'
-    archives = '../20200705v1/full/pdf_parses/'
-    output_file = '../analysis/mv_pdf.jsonl'
-    record = GettingPDFs(input_file, archives, output_file)
-    ids = record.open_input
-    articles_interest = record.get_articles(ids)
-    record.parallel_process(articles_interest)
