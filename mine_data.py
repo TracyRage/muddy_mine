@@ -29,15 +29,15 @@ if __name__ == "__main__":
     record.load_mining
 
     # Mine abstract chemical data
-    # record.mine_chemical_data('abstract')
+    record.mine_chemical_data('abstract')
 
     # Mine abstract Bacterial and Archaea data
-    # record.mine_taxonomic_data('abstract', 'Bacteria', 'abs_bacteria')
-    # record.mine_taxonomic_data('abstract', 'Archaea', 'abs_archaea')
+    record.mine_taxonomic_data('abstract', 'Bacteria', 'abs_bacteria')
+    record.mine_taxonomic_data('abstract', 'Archaea', 'abs_archaea')
 
     # Mine article chemical data
-    record.mine_chemical_data('text')
+    # record.mine_chemical_data('text')
 
     # Mine article Bacterial and Archaea data
-    record.mine_taxonomic_data('text', 'Bacteria', 'art_bacteria')
-    record.mine_taxonomic_data('text', 'Archaea', 'art_archaea')
+    # record.mine_taxonomic_data('text', 'Bacteria', 'art_bacteria')
+    # record.mine_taxonomic_data('text', 'Archaea', 'art_archaea')
