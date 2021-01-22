@@ -21,6 +21,3 @@ jobs:
     - name: Install dependencies
       run: |
         $CONDA/bin/conda env update --file muddy_conda.txt --name base
-    - name: Test with pytest
-      run: |
-        pytest
