@@ -1,0 +1,20 @@
+name: muddy_mine
+
+on: [push]
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      -uses: actions/checkout@v2
+      -name: Install Python 3
+       uses: actions/setup-python@v2
+       with:
+         python-version: 3.8
+      -name: Install dependencies
+       run: |
+         $CONDA/bin/conda env create --file muddy_conda.txt
+      -name: Test with pytest
+       run: |
+         $CONDA/bin/pytest
