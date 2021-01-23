@@ -3,7 +3,7 @@ import argparse
 
 if __name__ == "__main__":
     # Design argument parser
-    parser = argparse.ArgumentParse(
+    parser = argparse.ArgumentParser(
         description='Extract fields of interest from S2ORC jsonl files')
     parser.add_argument('-im',
                         '--metadata_input',
@@ -24,7 +24,7 @@ if __name__ == "__main__":
         '-op',
         '--pdf_output',
         help='Provide output path for extracted metadata fields')
-    args = parser.parser_args()
+    args = parser.parse_args()
 
     # Pipeline per se
     record = ExtractInfo(args.metadata_input, args.pdf_input, args.meta_output,
@@ -33,5 +33,5 @@ if __name__ == "__main__":
     articles_meta = record.read_jsonl(record.input_meta)
     meta_extracted = record.extract_metadata(articles_meta)
     body_extracted = record.extract_body_text(articles_pdf)
-    write_meta = record.write_to_files(meta_extracted, record.meta_output)
-    write_pdf = record.write_to_files(body_extracted, record.pdf_output)
+    write_meta = record.write_to_files(meta_extracted, record.output_meta)
+    write_pdf = record.write_to_files(body_extracted, record.output_pdf)

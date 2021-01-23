@@ -38,7 +38,7 @@ class GettingPDFs:
         Input: List of S2ORC ids
         Output: List of generators which contain S2ORC pdf entries"""
         typer.secho('Extracting pdf entries from S2ORC', bold=True)
-        first = typer.style('Number of s2orc ids to search for', bold=True)
+        first = typer.style('Number of s2orc ids to search for ', bold=True)
         second = typer.style(f"{len(ids_list)}",
                              blink=True,
                              fg=typer.colors.GREEN,

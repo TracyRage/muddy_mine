@@ -1,0 +1,115 @@
+---
+title: "muddy_mine"
+output: github_document
+bibliography: man/bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      out.width = "80%")
+```
+
+<!-- badges: start -->
+![Python Package using Conda](https://github.com/TracyRage/muddy_mine/workflows/Python%20Package%20using%20Conda/badge.svg)
+![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
+<!-- badges: end -->
+
+#### Synopsis
+
+Mud volcanoes represent geological structures, which host various 
+hydrocarbonoclastic microbial consortia. Even though mud volcanoes can provide
+valuable data regarding recalcitrant hydrocarbon oxidation, topic is [still off
+the radar](https://pubmed.ncbi.nlm.nih.gov/?term=mud%5BTIAB%5D+AND+volcano%5BTIAB%5D).
+Meanwhile, NLP technology has been gaining traction over the last years in the mainstream
+fields [@wang-2020]. Niche environmental topics lamentably lag behind.
+
+We present a mining pipeline - **muddy_mine**, which could engage NLP technology in the niche
+environmental topics such as mud volcanoes. This pipeline is able to mine taxonomy
+(bacterial, archaeal), methods or any other tokens of interest from the Open Access articles.
+Articles available in the [S2ORC](https://github.com/allenai/s2orc/)
+database, [CC BY-NC 2.0, unmodified](https://creativecommons.org/licenses/by-nc/2.0/) by
+[@lo-wang-2020-s2orc]. **muddy_mine** output represents a csv table with all the relevant
+data regarding mud volcanoes. 
+
+#### Methods
+
+In order to aggregate biologically-oriented tokens, we used
+[ScispaCy](https://github.com/allenai/scispacy) [@neumann_2019_scispacy] models.
+Taxonomy-flavored tokens were checked against [NCBI Taxonomy](ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/) database (Nov, 2020). We built local NCBI database with [ETE3](https://github.com/etetoolkit/ete) [@cepas_2016].
+
+#### Bonus
+
+Pipeline is flexible and can be adapted for any topics. 
+As long as you provide a script with python dataclasses including your terminology of
+interest.
+
+#### Set up environment
+
+Download repository
+
+`git clone https://github.com/TracyRage/muddy_mine.git`
+
+Initialize conda environment
+
+`conda env create --file muddy_conda.txt`
+
+Install NCBI Taxonomy database
+
+`python -c 'from ete3 import NCBITaxa; ncbi = NCBITaxa(); ncbi.update_taxonomy_database()`
+
+> Note bene
+
+S2ORC database includes around 12M papers. The full database has around 200GB (compressed).
+In order to avoid wrangling this heavy dataset, we created a subset of S2ORC data. You can find it in the `sample_data/` directory. Pipeline demo works with that very subset.
+
+If you need help, `python any_muddy_script.py --help`
+
+#### Pipeline
+
+1. Extract meta entries from S2ORC
+
+```{r}
+knitr::include_graphics("man/figures/scan_s2orc.png")
+```
+
+2. Extract pdf entries from S2ORC
+
+```{r}
+knitr::include_graphics("man/figures/scan_s2orc_pdf.png")
+```
+
+3. Extract fields of interest from jsonl files
+
+```{r}
+knitr::include_graphics("man/figures/extract_s2orc.png")
+```
+
+4. Tabulate jsonl files
+
+```{r}
+knitr::include_graphics("man/figures/tabulate_s2orc.png")
+```
+
+5. Mine data
+
+```{r}
+knitr::include_graphics("man/figures/mine_data.png")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### References

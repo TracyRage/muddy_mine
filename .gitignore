@@ -1,9 +1,11 @@
 # Directories
 /20200705v1/
 __pycache__/
+/.Rproj.user/
 
 # Extensions
 *.sw*
 *.pyc
 *.ipynb
 .hypothesis/
+muddy_db.Rproj

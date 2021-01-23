@@ -3,7 +3,7 @@ import argparse
 
 if __name__ == "__main__":
     # Design arguments parser
-    parser = argparse.ArgumentParse(
+    parser = argparse.ArgumentParser(
         description="Get pdf entries from S2ORC pdf archives")
     parser.add_argument('-i',
                         '--metadata_input',
@@ -14,13 +14,13 @@ if __name__ == "__main__":
                         '--pdf_archives',
                         metavar='',
                         required=True,
-                        help='Provide path  of jsonl S2ORC pdf archives')
+                        help='Provide path to jsonl S2ORC pdf archives')
     parser.add_argument(
         '-o',
         '--output_file',
         required=True,
         help='Provide path for jsonl file with  extracted S2ORC pdf entries')
-    args = parser.parser_args()
+    args = parser.parse_args()
 
     # Pipeline per se
     record = GettingPDFs(args.metadata_input, args.pdf_archives,

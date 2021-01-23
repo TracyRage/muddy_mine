@@ -23,7 +23,7 @@ if __name__ == "__main__":
                         metavar='',
                         required=True,
                         help='Provide output path for merged table')
-    args = parser.parser_args()
+    args = parser.parse_args()
 
     # Pipeline per so
     typer.secho('Reading jsonl files with extracted fields of interests',

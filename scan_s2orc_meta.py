@@ -16,7 +16,7 @@ if __name__ == "__main__":
                         '--archives_path',
                         metavar='',
                         required=True,
-                        help='Provide archives paths')
+                        help='Provide path to meta S2ORC archives')
     parser.add_argument('-o',
                         '--output_file',
                         metavar='',

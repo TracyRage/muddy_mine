@@ -10,16 +10,18 @@ if __name__ == "__main__":
                         metavar='',
                         required=True,
                         help='Provide table with texts to mine')
-    parser.add_argument('-mv',
-                        '--output_mv',
-                        metavar='',
-                        required=True,
-                        help='Provide output for mud volcano specific data')
-    parser.add_argument('-taxa',
-                        '--output_taxa',
-                        metavar='',
-                        required=True,
-                        help='Provide output for taxonomic specific data')
+    parser.add_argument(
+        '-mv',
+        '--output_mv',
+        metavar='',
+        required=True,
+        help='Provide output for mud volcano specific data table')
+    parser.add_argument(
+        '-taxa',
+        '--output_taxa',
+        metavar='',
+        required=True,
+        help='Provide output for taxonomic specific data table')
     args = parser.parse_args()
 
     # Init MineData class (dedicated to data mining)
