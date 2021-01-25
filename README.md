@@ -54,7 +54,7 @@ Download repository
 
 Initialize conda environment
 
-`conda create --name muddy_db --file muddy_conda.txt`
+`conda env create --file environment.yml`
 
 Activate conda environment
 
@@ -64,6 +64,9 @@ Install NCBI Taxonomy database
 
 `python -c 'from ete3 import NCBITaxa; ncbi = NCBITaxa();
 ncbi.update_taxonomy_database()'`
+
+If get an error, [click
+here](https://github.com/Prunoideae/MitoFlex/issues/2#issuecomment-682018016).
 
 > Nota bene
 
