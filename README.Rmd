@@ -47,19 +47,23 @@ Taxonomy-flavored tokens were checked against
 
 #### Set up environment
 
-Download repository
+* Download repository
 
 `git clone https://github.com/TracyRage/muddy_mine.git`
 
-Initialize conda environment
+* Initialize conda environment
 
 `conda env create --file environment.yml`
 
-Activate conda environment
+* Activate conda environment
 
 `conda activate muddy_db`
 
-Install NCBI Taxonomy database
+* Install ScispaCy model `en_core_sci_sm`
+
+`pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_core_sci_sm-0.3.0.tar.gz`
+
+* Install NCBI Taxonomy database
 
 `python -c 'from ete3 import NCBITaxa; ncbi = NCBITaxa(); ncbi.update_taxonomy_database()'`
  
