@@ -1,6 +1,8 @@
 muddy\_mine
 ================
 
+<img src="man/figures/muddy_mine_title.png" width="100%" />
+
 <!-- badges: start -->
 
 ![Python Package using

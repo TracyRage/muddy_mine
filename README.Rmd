@@ -9,6 +9,10 @@ knitr::opts_chunk$set(echo = FALSE,
                       out.width = "80%")
 ```
 
+```{r out.width="100%"}
+knitr::include_graphics("man/figures/muddy_mine_title.png")
+```
+
 <!-- badges: start -->
 ![Python Package using Conda](https://github.com/TracyRage/muddy_mine/workflows/Python%20Package%20using%20Conda/badge.svg)
 ![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
