@@ -12,7 +12,7 @@ import json
 
 class GettingPMID:
     """Synopsis: GettingPMID class is dedicated to the collection of the
-    PMIDs (from Entrez) related to the papers which are mainly focused
+    PMIDs (from Entrez) related to the papers, which are mainly focused
     on mud volcanoes (default value)"""
     def __init__(self,
                  email: str,
@@ -25,7 +25,7 @@ class GettingPMID:
 
     @property
     def get_pmid(self) -> List[str]:
-        """Synopsis: Fetch PMIDs of mud volcano articles (from Entrez)
+        """Synopsis: Fetch PMIDs articles (from Entrez)
         Input: Pubmed query string e.g. mud[TIAB] AND volcano[TIAB]
         Output: List of PMIDs"""
         # Header comment
@@ -52,7 +52,7 @@ class GettingPMID:
 
     def get_articles(self, pmid_list: List[str]) -> List[Generator]:
         """Synopsis: Process each  S2ORC archive and extract aricles of
-        interest based on PMIDs fetched from Pubmed
+        interest based on PMIDs fetched from the Pubmed
         Input: List of PMIDs
         Output: Get articles from metadata S2ORC archives"""
         interests = [
@@ -62,14 +62,14 @@ class GettingPMID:
         return interests
 
     def _get_art_list(self, article_generator: Generator) -> None:
-        """Dependency: Helper for parallel_process method
+        """Dependency: Helper for the parallel_process method
         Synopsis: Append articles metadata to a new jsonl file"""
         final_list = list(article_generator)
         with jsonlines.open(str(self.extracted_output), 'a') as f:
             [f.write(article) for article in final_list]
 
     def parallel_process(self, interests_articles: List[Generator]):
-        """Synopsis: Extract articles of inteteres from archives in parallel"""
+        """Synopsis: Extract articles of interest from archives in parallel"""
         typer.secho('Working with archives (it could take a while): ',
                     bold=True)
         with click_spinner.spinner():
@@ -79,8 +79,8 @@ class GettingPMID:
                      n_workers=4)
 
     def _open_s2rc(self, archive, pmid_list: List[str]) -> Generator:
-        """Dependency: Helper for get method
-        Synopsis: Open individual S2ORC archive metadata
+        """Dependency: Helper for the get_articles method
+        Synopsis: Open individual S2ORC archive
         """
         try:
             with gzip.open(archive) as f:

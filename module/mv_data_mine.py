@@ -52,8 +52,9 @@ class ExtractData:
     def get_taxonomy(
             self, taxa_rank: str,
             domain: str) -> Generator[Dict[str, List[str]], None, None]:
-        """Synopsis: Mine taxonomic data from selected texts
-        Output: '{taxonomic_rank: taxonomy_data (# times mentioned)}"""
+        """Synopsis: Mine taxonomic data from the selected texts
+        Output: Generator of dicts 
+        '{taxonomic_rank: taxonomy_data (# times mentioned)}"""
         start = typer.style('Extracting taxonomy: ', bold=True)
         taxa_message = typer.style(taxa_rank,
                                    blink=True,
@@ -69,7 +70,8 @@ class ExtractData:
             dict_key: str) -> Generator[Dict[str, List[str]], None, None]:
         """Synopsis: Mine mud volcano data (chemical / geological / other)
         from selected texts
-        Output: '{data_category: mud_volcano_data (# times mentioned)}'"""
+        Output: Generator of dicts
+        '{data_category: mud_volcano_data (# times mentioned)}'"""
         start = typer.style('Extracting mud volcano data: ', bold=True)
         data_message = typer.style(dict_key,
                                    fg=typer.colors.GREEN,
@@ -117,9 +119,9 @@ class ExtractData:
 
     def map_s2orc_id(self, mapped_dicts: Dict[str,
                                               List[str]]) -> Dict[str, Any]:
-        """Synopsis: Map S2ORC ids to extracted token dicts
+        """Synopsis: Map S2ORC ids to the extracted token dicts
         Input: get_taxonomy and get_mv_data output dicts
-        Output: '{s2orc_id: token_dict}'"""
+        Output: Dict '{s2orc_id: token_dict}'"""
         return {
             s2_id: mapped_dict
             for s2_id, mapped_dict in zip(self.s2orc_ids, mapped_dicts)

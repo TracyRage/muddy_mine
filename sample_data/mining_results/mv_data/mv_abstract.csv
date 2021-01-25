@@ -1,0 +1,67 @@
+,s2orc_id,place,morphology,methane_type,metabolics,damo,type_mathanogenesis,anme
+0,378075,"['Marine (2)', 'marine (4)']",-,-,['AOM (1)'],-,-,-
+1,423291,['terrestrial (1)'],-,-,-,-,-,-
+2,818482,['marine (14)'],-,"['biogenic (1)', 'thermogenic (1)']",['AOM (8)'],-,-,"['ANME-2 (10)', 'ANME-3 (3)', 'ANME-1 (2)', 'ANME (14)']"
+3,1587067,"['marine (24)', 'Marine (1)', 'terrestrial (2)']",-,-,"['AOM (5)', 'SRB (9)']",-,-,-
+4,2118101,-,-,-,-,-,-,-
+5,2216104,['marine (2)'],-,['thermogenic (1)'],"['AOM (6)', 'SRB (3)']",-,-,['ANME (2)']
+6,2829093,['marine (7)'],-,-,-,-,-,-
+7,3128887,"['Terrestrial (1)', 'marine (4)', 'terrestrial (12)']",-,-,"['methanogenesis (17)', 'AOM (29)']",-,-,"['ANME-1 (3)', 'ANME (2)', 'ANME-2 (2)']"
+8,4430700,['marine (1)'],-,-,"['AOM (10)', 'SRB (1)']",-,-,"['ANME-2 (3)', 'ANME-3 (7)', 'ANME (3)', 'ANME-1 (1)']"
+9,4773405,-,-,-,-,-,-,-
+10,4984670,['terrestrial (2)'],['cone (8)'],['thermogenic (16)'],-,-,-,-
+11,6153701,['marine (5)'],-,-,-,-,-,-
+12,6384919,"['terrestrial (1)', 'Marine (1)']",-,['thermogenic (1)'],-,-,-,"['ANME-1 (1)', 'ANME-2 (1)', 'ANME-3 (1)']"
+13,7097552,"['Marine (1)', 'marine (4)']",-,-,"['AOM (65)', 'SRB (6)', 'methanogenesis (1)']",-,-,"['ANME-1 (31)', 'ANME-2 (6)', 'ANME-3 (4)', 'ANME (11)']"
+14,7907279,['marine (2)'],-,-,['SRB (1)'],-,-,-
+15,8249528,-,-,-,-,-,-,-
+16,8819857,['marine (4)'],-,-,"['AOM (10)', 'SRB (5)']",-,-,"['ANME-2 (6)', 'ANME (3)', 'ANME-3 (9)', 'ANME-1 (2)']"
+17,9277299,['marine (1)'],-,-,-,-,-,-
+18,9382611,"['Terrestrial (1)', 'terrestrial (8)', 'marine (4)']",-,-,"['AOM (42)', 'methanogenesis (9)']",-,['acetoclastic (2)'],"['ANME (7)', 'ANME-2 (4)', 'ANME-1 (2)']"
+19,10052410,-,-,-,-,-,-,-
+20,10441501,['marine (4)'],-,-,['methanogenesis (4)'],-,-,-
+21,12345051,-,-,-,-,-,-,-
+22,12594595,"['terrestrial (1)', 'marine (1)']",-,-,-,-,-,-
+23,13438555,"['marine (10)', 'Marine (1)']",-,-,"['AOM (9)', 'methanogenesis (3)', 'SRB (12)']",-,-,"['ANME (7)', 'ANME-1 (10)', 'ANME-2 (9)', 'ANME-3 (56)']"
+24,14369402,"['marine (4)', 'Marine (2)']",-,-,-,-,-,-
+25,14583627,"['marine (1)', 'Marine (1)']",-,-,"['methanogenesis (2)', 'AOM (36)', 'SRB (10)']",-,-,"['ANME (9)', 'ANME-1 (9)', 'ANME-2 (10)', 'ANME-3 (1)']"
+26,14982203,"['marine (2)', 'Marine (3)']",-,-,['AOM (22)'],-,-,"['ANME-1 (5)', 'ANME-2 (8)', 'ANME-3 (1)', 'ANME (1)']"
+27,15514304,-,-,-,-,-,-,-
+28,16773456,-,-,-,['methanogenesis (7)'],-,-,-
+29,16888850,['marine (4)'],-,-,-,-,-,-
+30,17208459,"['terrestrial (2)', 'Marine (1)']",-,-,-,-,-,-
+31,18110353,['marine (1)'],-,-,-,-,-,-
+32,19286940,['marine (1)'],-,-,-,-,-,-
+33,19304315,"['marine (5)', 'terrestrial (12)', 'Terrestrial (1)']",['cone (1)'],['thermogenic (2)'],"['methanogenesis (9)', 'AOM (7)']",-,['acetoclastic (2)'],"['ANME (2)', 'ANME-1 (2)']"
+34,19394643,"['terrestrial (16)', 'Terrestrial (2)']",-,"['thermogenic (2)', 'biogenic (1)']",['methanogenesis (1)'],-,-,-
+35,19646536,-,-,"['biogenic (5)', 'thermogenic (4)']",-,-,-,-
+36,20023799,['marine (3)'],-,-,"['methanogenesis (2)', 'Methanogenesis (1)', 'SRB (4)']",-,-,"['ANME (23)', 'ANME-1 (18)', 'ANME-2 (20)', 'ANME-3 (8)']"
+37,21490211,['marine (9)'],-,-,"['AOM (2)', 'methanogenesis (1)']",-,-,"['ANME-1 (1)', 'ANME-2 (1)']"
+38,22414992,['marine (2)'],-,-,['AOM (9)'],-,-,-
+39,24389953,['marine (6)'],-,['biogenic (3)'],"['Methanogenesis (1)', 'AOM (9)', 'methanogenesis (22)', 'SRB (3)']",-,"['acetoclastic (11)', 'Acetoclastic (2)']","['ANME (2)', 'ANME-2 (1)', 'ANME-3 (1)', 'ANME-1 (6)']"
+40,26654892,['marine (3)'],-,-,-,-,-,-
+41,31592443,-,-,-,['methanogenesis (1)'],-,-,"['ANME (2)', 'ANME-1 (4)', 'ANME-2 (3)', 'ANME-3 (1)']"
+42,34107345,-,-,-,-,-,-,-
+43,35116371,['marine (5)'],-,-,-,-,-,-
+44,38728909,['marine (4)'],-,-,-,-,-,-
+45,42717529,-,-,-,-,-,-,-
+46,46855510,-,-,-,-,-,-,-
+47,49214293,"['Marine (2)', 'marine (6)', 'terrestrial (3)']",-,"['thermogenic (26)', 'biogenic (33)', 'Thermogenic (1)']","['AOM (7)', 'methanogenesis (35)']",-,['acetoclastic (10)'],"['ANME-1 (3)', 'ANME-2 (2)']"
+48,52112134,['Marine (1)'],-,-,"['AOM (4)', 'methanogenesis (1)', 'SRB (5)']",-,-,"['ANME (4)', 'ANME-3 (9)', 'ANME-2 (1)']"
+49,52131258,"['terrestrial (12)', 'marine (15)']",['cone (2)'],-,['methanogenesis (6)'],-,-,['ANME-1 (6)']
+50,195185567,"['marine (9)', 'Marine (3)']",['cone (1)'],['thermogenic (3)'],"['AOM (4)', 'methanogenesis (1)', 'SRB (3)']",-,-,"['ANME (6)', 'ANME-1 (1)']"
+51,206164693,['marine (7)'],-,-,-,-,-,-
+52,206723511,"['marine (3)', 'Marine (2)']",-,-,['AOM (1)'],-,-,"['ANME-3 (1)', 'ANME-1 (7)', 'ANME (4)', 'ANME-2 (3)']"
+53,207696802,['marine (1)'],-,-,-,-,-,-
+54,208279838,['marine (2)'],-,-,"['SRB (6)', 'AOM (11)']",-,-,"['ANME-3 (11)', 'ANME-2 (12)', 'ANME-1 (2)']"
+55,210195508,"['marine (2)', 'terrestrial (1)', 'Terrestrial (1)']",['cone (5)'],"['thermogenic (4)', 'biogenic (2)']","['methanogenesis (1)', 'AOM (10)']",-,-,-
+56,210914727,-,['cone (1)'],-,-,-,-,-
+57,214827724,['marine (9)'],-,-,"['AOM (2)', 'methanogenesis (1)']",-,-,"['ANME-1 (1)', 'ANME-2 (1)']"
+58,214917229,"['Terrestrial (1)', 'terrestrial (8)', 'marine (4)']",-,-,"['AOM (42)', 'methanogenesis (9)']",-,['acetoclastic (2)'],"['ANME (7)', 'ANME-2 (4)', 'ANME-1 (2)']"
+59,214924177,"['Marine (2)', 'marine (4)']",-,-,['AOM (1)'],-,-,-
+60,215035312,['marine (1)'],-,"['biogenic (20)', 'thermogenic (19)']",['methanogenesis (5)'],-,-,-
+61,215076876,-,-,"['biogenic (5)', 'thermogenic (4)']",-,-,-,-
+62,215124414,"['marine (4)', 'Marine (2)']",-,-,-,-,-,-
+63,215213250,['terrestrial (1)'],-,-,-,-,-,-
+64,215265781,"['marine (9)', 'Marine (3)']",['cone (1)'],['thermogenic (3)'],"['AOM (4)', 'methanogenesis (1)', 'SRB (3)']",-,-,"['ANME (6)', 'ANME-1 (1)']"
+65,215379686,['marine (1)'],-,-,-,-,-,-

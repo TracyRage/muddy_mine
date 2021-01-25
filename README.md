@@ -13,11 +13,11 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
 
 Mud volcanoes represent geological structures, which host various
 hydrocarbonoclastic microbial consortia. Even though mud volcanoes can
-provide valuable data regarding recalcitrant hydrocarbon oxidation,
-topic is [still off the
+provide valuable data regarding hydrocarbon oxidation, topic is [still
+off the
 radar](https://pubmed.ncbi.nlm.nih.gov/?term=mud%5BTIAB%5D+AND+volcano%5BTIAB%5D).
-Meanwhile, NLP technology has been gaining traction over the last years
-in the mainstream fields (Wang et al. 2020). Niche environmental topics
+Meanwhile, NLP has been gaining traction over the last years in the
+mainstream fields (Wang et al. 2020). Niche environmental topics
 lamentably lag behind.
 
 We present a mining pipeline - **muddy\_mine**, which could engage NLP
@@ -26,9 +26,13 @@ pipeline is able to mine taxonomy (bacterial, archaeal), methods or any
 other tokens of interest from the Open Access articles. Articles
 available in the [S2ORC](https://github.com/allenai/s2orc/) database,
 [CC BY-NC 2.0,
-unmodified](https://creativecommons.org/licenses/by-nc/2.0/) by (Lo et
-al. 2020). **muddy\_mine** output represents a csv table with all the
+unmodified](https://creativecommons.org/licenses/by-nc/2.0/) (Lo et al.
+2020). **muddy\_mine** output represents a `csv` table with all the
 relevant data regarding mud volcanoes.
+
+**muddy\_mine** was used to create
+[**muddy\_db**](https://github.com/TracyRage/muddy_db). **muddy\_db**
+being the first biologically-oriented mud volcano database.
 
 #### Methods
 
@@ -36,15 +40,9 @@ In order to aggregate biologically-oriented tokens, we used
 [ScispaCy](https://github.com/allenai/scispacy) (Neumann et al. 2019)
 models. Taxonomy-flavored tokens were checked against [NCBI
 Taxonomy](ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/) database (Nov,
-2020). We built local NCBI database with
+2020). We built a local NCBI database with
 [ETE3](https://github.com/etetoolkit/ete) (Huerta-Cepas, Serra, and Bork
 2016).
-
-#### Bonus
-
-Pipeline is flexible and can be adapted for any topics. As long as you
-provide a script with python dataclasses including your terminology of
-interest.
 
 #### Set up environment
 
@@ -54,14 +52,18 @@ Download repository
 
 Initialize conda environment
 
-`conda env create --file muddy_conda.txt`
+`conda create --name muddy_db --file muddy_conda.txt`
+
+Activate conda environment
+
+`conda activate muddy_db`
 
 Install NCBI Taxonomy database
 
 `python -c 'from ete3 import NCBITaxa; ncbi = NCBITaxa();
-ncbi.update_taxonomy_database()`
+ncbi.update_taxonomy_database()'`
 
-> Note bene
+> Nota bene
 
 S2ORC database includes around 12M papers. The full database has around
 200GB (compressed). In order to avoid wrangling this heavy dataset, we
@@ -72,23 +74,68 @@ If you need help, `python any_muddy_script.py --help`
 
 #### Pipeline
 
-1.  Extract meta entries from S2ORC
+1.  Extract meta entries from the S2ORC (`scan_s2orc_meta.py`)
+
+If you want to get articles from the S2ORC, then you need to have their
+metadata, be it PMIDs (Pubmed IDs) or DOIs. **muddy\_mine** uses PMIDs
+to retrieve metadata from the S2ORC.
+
+`scan_s2orc_meta.py` does the following procedures: (1) takes your
+Pubmed query (`--entrez-query`); (2) gets the correspondent PMIDs from
+the Pubmed; (3) decompresses S2ORC archives (`--archives_path`); (4)
+compares your list of PMIDs against S2ORC metadata; (5) writes the
+matching hits to an output file (`--output_file`).
 
 <img src="man/figures/scan_s2orc.png" width="80%" />
 
 2.  Extract pdf entries from S2ORC
 
+When you have metadata entries, you can proceed to extract the articles.
+
+`scan_s2orc_pdf.py` does the following procedures: (1) uses the previous
+step output file (`--metadata_input`); (2) checks it against the S2ORC
+pdf\_parse database (`--pdf_archives`); (3) writes the matching hits to
+an output file (`--output_file`).
+
 <img src="man/figures/scan_s2orc_pdf.png" width="80%" />
 
-3.  Extract fields of interest from jsonl files
+3.  Extract fields of interest from the `jsonl` files
+    (`extract_s2orc.py`)
+
+Outputs from the previous steps represent `jsonl` files. Those `json`
+files contain a lot of metadata fields, ranging from PMIDs to
+arxiv\_ids. We need to extract the *important ones*.
+
+`extract_s2orc.py` does the following procedures: (1) takes metadata
+(`--metadata_input`) and pdf\_parse (`--pdf_input`) output files from
+the previous step and (2) creates files with essential fields (pmid,
+title, authors, abstract etc.) (`--meta_output` and `--pdf_output`).
 
 <img src="man/figures/extract_s2orc.png" width="80%" />
 
-4.  Tabulate jsonl files
+4.  Tabulate `jsonl` files (`tabulate_s2orc.py`)
+
+When you have clean metadata and pdf\_parse `jsonl` files, you can merge
+them and get a `csv` table. Use output files from the previous step
+(`--meta_input`, `--pdf_input`).
 
 <img src="man/figures/tabulate_s2orc.png" width="80%" />
 
-5.  Mine data
+5.  Mine data (`mine_data.py`)
+
+When you have the `csv` table, you can mine all the relevant mud volcano
+data. Check `module/get_terms.py` and `module/get_dict_terms.py` for
+more information.
+
+`mine_data.py` does the following procedures: (1) parses articles
+(`--input_table`); (2) mines and counts taxonomic-flavored tokens; (3)
+mines and counts chemical, geological and other tokens of interest; (3)
+writes results to `csv` tables (`--output_mv` and `--output_taxa`).
+
+> Nota bene
+
+Mining process takes a lot of time. Check the mining results in the
+`sample_data/mining_results/` directory.
 
 <img src="man/figures/mine_data.png" width="80%" />
 

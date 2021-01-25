@@ -9,3 +9,5 @@ __pycache__/
 *.ipynb
 .hypothesis/
 muddy_db.Rproj
+.Rhistory
+.Rbuildignore

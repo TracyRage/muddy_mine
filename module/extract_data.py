@@ -14,7 +14,7 @@ class ExtractInfo:
         store_attr('input_meta, input_pdf, output_meta, output_pdf')
 
     def read_jsonl(self, input_file):
-        """Synopsis: Read extracted jsonl files
+        """Synopsis: Read jsonl files
         Input: jsonl files extracted by GettingPMID
         and GettingPDFs classes"""
         with open(input_file) as f:

@@ -1,0 +1,67 @@
+,s2orc_id,phylum,class,order,family,genus,species
+0,378075,"['Thaumarchaeota (6)', 'Euryarchaeota (2)']",['Halobacteria (4)'],-,-,-,-
+1,423291,-,-,-,-,-,-
+2,818482,-,-,"['Methanococcales (3)', 'Methanosarcinales (1)']",-,"['Methanosarcina (7)', 'Methanococcoides (1)', 'Methanocaldococcus (1)']",-
+3,1587067,-,-,-,-,-,-
+4,2118101,-,-,-,-,-,-
+5,2216104,-,-,-,-,-,-
+6,2829093,-,-,-,-,-,-
+7,3128887,-,-,"['Methanomicrobiales (2)', 'Methanosarcinales (1)']",-,"['Methanosarcina (5)', 'Methanococcoides (5)', 'Methanolobus (1)', 'Methanoplanus (2)', 'Methanocalculus (1)', 'Methanospirillum (1)']",-
+8,4430700,-,-,-,-,-,-
+9,4773405,-,-,-,-,-,-
+10,4984670,-,-,-,-,-,-
+11,6153701,-,-,-,-,-,-
+12,6384919,-,-,-,-,['Methanococcoides (1)'],-
+13,7097552,['Euryarchaeota (1)'],-,-,-,-,-
+14,7907279,-,-,-,-,-,-
+15,8249528,-,-,-,-,-,-
+16,8819857,"['Crenarchaeota (1)', 'Euryarchaeota (1)']",-,-,-,-,-
+17,9277299,-,-,-,-,['Methanoculleus (5)'],-
+18,9382611,"['Euryarchaeota (1)', 'Thaumarchaeota (2)']",['Methanomicrobia (1)'],"['Methanosarcinales (3)', 'Methanobacteriales (1)', 'Methanococcales (1)', 'Methanomicrobiales (1)', 'Methanocellales (1)']",-,"['Methanocalculus (1)', 'Methanosarcina (2)', 'Methanolobus (1)', 'Methanococcus (1)']",-
+19,10052410,-,-,-,-,-,-
+20,10441501,-,-,"['Methanosarcinales (1)', 'Methanomassiliicoccales (1)']",-,"['Methanococcoides (28)', 'Methanopyrus (2)']",-
+21,12345051,-,-,-,-,-,-
+22,12594595,"['Crenarchaeota (1)', 'archaeon (1)']","['Thermoprotei (2)', 'archaeon (1)']","['Thermoproteales (2)', 'archaeon (1)']","['Thermoproteaceae (1)', 'archaeon (1)']","['Pyrobaculum (22)', 'Thermoproteus (2)', 'archaeon (1)']",['archaeon (1)']
+23,13438555,['Crenarchaeota (1)'],-,"['Methanosarcinales (3)', 'Methanomicrobiales (1)']",-,"['Methanococcoides (3)', 'Methanolobus (3)', 'Methanohalobium (1)']",-
+24,14369402,"['Thaumarchaeota (7)', 'Euryarchaeota (1)', 'archaeon (1)']",['archaeon (1)'],['archaeon (1)'],['archaeon (1)'],"['Nitrosopumilus (5)', 'archaeon (1)']",['archaeon (1)']
+25,14583627,-,-,-,-,-,-
+26,14982203,"['Euryarchaeota (1)', 'Crenarchaeota (4)']",-,"['Methanosarcinales (3)', 'Halobacteriales (1)']",-,-,-
+27,15514304,-,-,-,-,-,-
+28,16773456,-,-,-,-,"['Methanococcoides (13)', 'Methanosarcina (1)']",-
+29,16888850,-,-,-,-,-,-
+30,17208459,-,-,-,-,-,-
+31,18110353,-,-,-,-,-,-
+32,19286940,-,-,-,-,-,-
+33,19304315,['Euryarchaeota (1)'],-,"['Methanosarcinales (3)', 'Methanomicrobiales (3)']",-,"['Thermococcus (1)', 'Methanolobus (1)']",-
+34,19394643,-,-,-,-,-,-
+35,19646536,-,-,-,-,-,-
+36,20023799,-,-,-,-,-,-
+37,21490211,['Thaumarchaeota (1)'],-,-,-,-,-
+38,22414992,"['Crenarchaeota (1)', 'archaeon (2)']",['archaeon (2)'],"['Methanomicrobiales (1)', 'Methanosarcinales (2)', 'archaeon (2)']",['archaeon (2)'],"['Methanosarcina (1)', 'archaeon (2)', 'Methanococcus (2)']",['archaeon (2)']
+39,24389953,['Euryarchaeota (2)'],-,"['Methanosarcinales (1)', 'Methanomicrobiales (1)']",-,"['Methanococcoides (2)', 'Methanohalophilus (1)']",-
+40,26654892,-,-,-,-,-,-
+41,31592443,-,-,"['Methanomicrobiales (2)', 'Methanosarcinales (1)']",-,['Methanogenium (1)'],-
+42,34107345,-,-,-,-,-,-
+43,35116371,-,-,-,-,-,-
+44,38728909,-,-,-,-,-,-
+45,42717529,-,-,-,-,-,-
+46,46855510,-,-,-,-,-,-
+47,49214293,"['Thaumarchaeota (1)', 'Euryarchaeota (1)', 'Crenarchaeota (1)']",-,"['Methanosarcinales (2)', 'Thermococcales (1)', 'Thermoplasmatales (1)']",-,-,-
+48,52112134,['Thaumarchaeota (1)'],-,-,-,-,-
+49,52131258,['Euryarchaeota (2)'],['Hadesarchaea (1)'],-,"['Methanobacteriaceae (2)', 'Methanoregulaceae (1)']",['Thermococcus (1)'],-
+50,195185567,['Thaumarchaeota (1)'],-,-,-,-,-
+51,206164693,-,-,-,-,-,-
+52,206723511,-,['Halobacteria (1)'],['Methanosarcinales (1)'],-,-,-
+53,207696802,-,-,-,-,-,-
+54,208279838,['Thaumarchaeota (1)'],-,-,-,-,-
+55,210195508,-,-,-,-,-,-
+56,210914727,-,-,-,-,-,-
+57,214827724,['Thaumarchaeota (1)'],-,-,-,-,-
+58,214917229,"['Euryarchaeota (1)', 'Thaumarchaeota (2)']",['Methanomicrobia (1)'],"['Methanosarcinales (3)', 'Methanobacteriales (1)', 'Methanococcales (1)', 'Methanomicrobiales (1)', 'Methanocellales (1)']",-,"['Methanocalculus (1)', 'Methanosarcina (2)', 'Methanolobus (1)', 'Methanococcus (1)']",-
+59,214924177,"['Thaumarchaeota (6)', 'Euryarchaeota (2)']",['Halobacteria (4)'],-,-,-,-
+60,215035312,-,-,"['Thermococcales (1)', 'Thermoplasmatales (1)']",-,['Methanosarcina (2)'],-
+61,215076876,-,-,-,-,-,-
+62,215124414,"['Thaumarchaeota (7)', 'Euryarchaeota (1)', 'archaeon (1)']",['archaeon (1)'],['archaeon (1)'],['archaeon (1)'],"['Nitrosopumilus (5)', 'archaeon (1)']",['archaeon (1)']
+63,215213250,-,-,-,-,-,-
+64,215265781,['Thaumarchaeota (1)'],-,-,-,-,-
+65,215379686,-,-,-,-,['Methanoculleus (5)'],-

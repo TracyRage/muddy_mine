@@ -11,8 +11,8 @@ def default_field(obj):
 
 @dataclass
 class SynChem:
-    """Synopsis: SynChem dataclass contains all the 
-    relevant chemical componds to mine"""
+    """Synopsis: SynChem dataclass contains all the
+    relevant chemical tokens to mine"""
     # Ions
     sulfate: List[str] = default_field(['sulfate', 'so42-'])
     sodium: List[str] = default_field(['sodium', 'na+', 'na(i'])

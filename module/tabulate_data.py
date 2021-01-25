@@ -5,7 +5,7 @@ import typer
 
 class TabulateData:
     """Synopsis: TabulateData class is dedicated to conversion of
-    jsonline to csv tables
+    jsonl files to csv tables
     Input: jsonl files with extracted fields of interest
     Ouput: jsonl files corresponding csv tables"""
     def __init__(self, extract_meta: str, extract_pdf: str,
