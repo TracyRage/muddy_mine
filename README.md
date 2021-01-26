@@ -50,7 +50,11 @@ Taxonomy](ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/) database (Nov, 2020)
 
   - Download repository
 
-`git clone https://github.com/TracyRage/muddy_mine.git`
+`git clone https://github.com/TracyRage/muddy_mine.git && cd muddy_mine`
+
+  - Install [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+    and [bioconda](https://bioconda.github.io/user/install.html)
+    (optional)
 
   - Initialize conda environment
 
