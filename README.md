@@ -11,7 +11,7 @@ Conda](https://github.com/TracyRage/muddy_mine/workflows/Python%20Package%20usin
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
 <!-- badges: end -->
 
-#### Synopsis
+### Synopsis
 
 Mud volcanoes represent geological structures, which host various
 hydrocarbonoclastic microbial consortia. Even though mud volcanoes can
@@ -36,17 +36,17 @@ relevant data regarding mud volcanoes.
 [**muddy\_db**](https://github.com/TracyRage/muddy_db). **muddy\_db**
 being the first biologically-oriented mud volcano database.
 
-#### Methods
+### Methods
 
 In order to aggregate biologically-oriented tokens, we used
 [ScispaCy](https://github.com/allenai/scispacy) (Neumann et al. 2019)
 models. Taxonomy-flavored tokens were checked against [NCBI
-Taxonomy](ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/) database (Nov,
-2020). We built a local NCBI database with
+Taxonomy](ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/) database (Nov, 2020)
+(Schoch et al. 2020) . We built a local NCBI database with
 [ETE3](https://github.com/etetoolkit/ete) (Huerta-Cepas, Serra, and Bork
 2016).
 
-#### Set up environment
+### Set up environment
 
   - Download repository
 
@@ -70,7 +70,7 @@ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_core_sci_s
 `python -c 'from ete3 import NCBITaxa; ncbi = NCBITaxa();
 ncbi.update_taxonomy_database()'`
 
-If get an error, [click
+If you get an error, [click
 here](https://github.com/Prunoideae/MitoFlex/issues/2#issuecomment-682018016).
 
 > Nota bene
@@ -82,7 +82,7 @@ directory. Pipeline demo works with that very subset.
 
 If you need help, `python any_muddy_script.py --help`
 
-#### Pipeline
+### Pipeline
 
 1.  Extract meta entries from the S2ORC (`scan_s2orc_meta.py`)
 
@@ -96,7 +96,7 @@ the Pubmed; (3) decompresses S2ORC archives (`--archives_path`); (4)
 compares your list of PMIDs against S2ORC metadata; (5) writes the
 matching hits to an output file (`--output_file`).
 
-<img src="man/figures/scan_s2orc.png" width="80%" />
+<img src="man/figures/scan_s2orc_meta.png" width="80%" />
 
 2.  Extract pdf entries from S2ORC
 
@@ -149,7 +149,7 @@ Mining process takes a lot of time. Check the mining results in the
 
 <img src="man/figures/mine_data.png" width="80%" />
 
-#### References
+### References
 
 <div id="refs" class="references">
 
@@ -180,6 +180,15 @@ Neumann, Mark, Daniel King, Iz Beltagy, and Waleed Ammar. 2019.
 Processing.” In *Proceedings of the 18th Bionlp Workshop and Shared
 Task*, 319–27. Florence, Italy: Association for Computational
 Linguistics. <https://doi.org/10.18653/v1/W19-5034>.
+
+</div>
+
+<div id="ref-schoch-2020">
+
+Schoch, C. L., S. Ciufo, M. Domrachev, C. L. Hotton, S. Kannan, R.
+Khovanskaya, D. Leipe, et al. 2020. “NCBI Taxonomy: a comprehensive
+update on curation, resources and tools.” *Database (Oxford)* 2020
+(January).
 
 </div>
 
