@@ -187,8 +187,6 @@ dependencies:
   - pip:
     - beautifulsoup4==4.9.3
     - dbfread==2.0.4
-    - en-core-sci-sm==0.3.0
-    - en-ner-craft-md==0.3.0
     - hypothesis-csv==0.3.4
     - hypothesis-jsonschema==0.18.2
     - ijson==2.6.1
