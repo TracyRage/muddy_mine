@@ -9,6 +9,7 @@ muddy\_mine
 Conda](https://github.com/TracyRage/muddy_mine/workflows/Python%20Package%20using%20Conda/badge.svg)
 ![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
+[![DOI](https://zenodo.org/badge/330344430.svg)](https://zenodo.org/badge/latestdoi/330344430)
 <!-- badges: end -->
 
 ### Synopsis
