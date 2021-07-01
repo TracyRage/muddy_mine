@@ -39,7 +39,7 @@ data regarding mud volcanoes.
 **muddy_mine** was used to create [**muddy_db**](https://github.com/TracyRage/muddy_db).
 **muddy_db** being the first biologically-oriented mud volcano database.
 
-Check muddy_db web app: [**muddy_db**](https://muddy-db.shinyapps.io/muddy/)
+Check muddy_db web app: [**muddy_db**](https://muddy-db.shinyapps.io/muddy_db/)
 
 ### Methods
 
