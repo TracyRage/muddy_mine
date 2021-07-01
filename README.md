@@ -38,7 +38,7 @@ relevant data regarding mud volcanoes.
 being the first biologically-oriented mud volcano database.
 
 Check muddy\_db web app:
-[**muddy\_db**](https://muddy-db.shinyapps.io/muddy/)
+[**muddy\_db**](https://muddy-db.shinyapps.io/muddy_db/)
 
 ### Methods
 
