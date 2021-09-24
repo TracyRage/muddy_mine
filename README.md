@@ -52,31 +52,29 @@ Taxonomy](ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/) database (Nov, 2020)
 
 ### Set up environment
 
-  - Download repository
+-   Download repository
 
 `git clone https://github.com/TracyRage/muddy_mine.git && cd muddy_mine`
 
-  - Install [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+-   Install [miniconda](https://docs.conda.io/en/latest/miniconda.html)
     and [bioconda](https://bioconda.github.io/user/install.html)
     (optional)
 
-  - Initialize conda environment
+-   Initialize conda environment
 
 `conda env create --file environment.yml`
 
-  - Activate conda environment
+-   Activate conda environment
 
 `conda activate muddy_db`
 
-  - Install ScispaCy model `en_core_sci_sm`
+-   Install ScispaCy model `en_core_sci_sm`
 
-`pip install
-https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_core_sci_sm-0.3.0.tar.gz`
+`pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_core_sci_sm-0.3.0.tar.gz`
 
-  - Install NCBI Taxonomy database
+-   Install NCBI Taxonomy database
 
-`python -c 'from ete3 import NCBITaxa; ncbi = NCBITaxa();
-ncbi.update_taxonomy_database()'`
+`python -c 'from ete3 import NCBITaxa; ncbi = NCBITaxa(); ncbi.update_taxonomy_database()'`
 
 If you get an error, [click
 here](https://github.com/Prunoideae/MitoFlex/issues/2#issuecomment-682018016).
@@ -155,22 +153,22 @@ writes results to `csv` tables (`--output_mv` and `--output_taxa`).
 Mining process takes a lot of time. Check the mining results in the
 `sample_data/mining_results/` directory.
 
-<img src="man/figures/mine_data.png" width="80%" />
+<img src="man/figures/mine_data_rectified.png" width="80%" />
 
 ### References
 
-<div id="refs" class="references">
+<div id="refs" class="references csl-bib-body hanging-indent">
 
-<div id="ref-cepas_2016">
+<div id="ref-cepas_2016" class="csl-entry">
 
-Huerta-Cepas, Jaime, François Serra, and Peer Bork. 2016. “ETE 3:
-Reconstruction, Analysis, and Visualization of Phylogenomic Data.”
-*Molecular Biology and Evolution* 33 (6): 1635–8.
-<https://doi.org/10.1093/molbev/msw046>.
+Huerta-Cepas, Jaime, François Serra, and Peer Bork. 2016. “<span
+class="nocase">ETE 3: Reconstruction, Analysis, and Visualization of
+Phylogenomic Data</span>.” *Molecular Biology and Evolution* 33 (6):
+1635–38. <https://doi.org/10.1093/molbev/msw046>.
 
 </div>
 
-<div id="ref-lo-wang-2020-s2orc">
+<div id="ref-lo-wang-2020-s2orc" class="csl-entry">
 
 Lo, Kyle, Lucy Lu Wang, Mark Neumann, Rodney Kinney, and Daniel Weld.
 2020. “S2ORC: The Semantic Scholar Open Research Corpus.” In
@@ -181,31 +179,32 @@ Computational Linguistics.
 
 </div>
 
-<div id="ref-neumann_2019_scispacy">
+<div id="ref-neumann_2019_scispacy" class="csl-entry">
 
 Neumann, Mark, Daniel King, Iz Beltagy, and Waleed Ammar. 2019.
 “ScispaCy: Fast and Robust Models for Biomedical Natural Language
-Processing.” In *Proceedings of the 18th Bionlp Workshop and Shared
+Processing.” In *Proceedings of the 18th BioNLP Workshop and Shared
 Task*, 319–27. Florence, Italy: Association for Computational
 Linguistics. <https://doi.org/10.18653/v1/W19-5034>.
 
 </div>
 
-<div id="ref-schoch-2020">
+<div id="ref-schoch-2020" class="csl-entry">
 
 Schoch, C. L., S. Ciufo, M. Domrachev, C. L. Hotton, S. Kannan, R.
-Khovanskaya, D. Leipe, et al. 2020. “NCBI Taxonomy: a comprehensive
-update on curation, resources and tools.” *Database (Oxford)* 2020
-(January).
+Khovanskaya, D. Leipe, et al. 2020. “<span class="nocase">NCBI Taxonomy:
+a comprehensive update on curation, resources and tools</span>.”
+*Database (Oxford)* 2020 (January).
 
 </div>
 
-<div id="ref-wang-2020">
+<div id="ref-wang-2020" class="csl-entry">
 
 Wang, J., H. Deng, B. Liu, A. Hu, J. Liang, L. Fan, X. Zheng, T. Wang,
-and J. Lei. 2020. “Systematic Evaluation of Research Progress on Natural
-Language Processing in Medicine Over the Past 20 Years: Bibliometric
-Study on PubMed.” *J Med Internet Res* 22 (1): e16816.
+and J. Lei. 2020. “<span class="nocase">Systematic Evaluation of
+Research Progress on Natural Language Processing in Medicine Over the
+Past 20 Years: Bibliometric Study on PubMed</span>.” *J Med Internet
+Res* 22 (1): e16816.
 
 </div>
 

@@ -100,7 +100,7 @@ class ExtractData:
         Synopsis: Extract relevant tokens from selected texts"""
         nlp = spacy.load(self.core_model)
         doc = nlp(text)
-        return [token.text for token in doc if token.text.lower() in data_list]
+        return [token.text.lower() for token in doc if token.text.lower() in data_list]
 
     def _build_dict(self, data_list: List[str],
                     taxa_rank: str) -> Dict[str, List[str]]:

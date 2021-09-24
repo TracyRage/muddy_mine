@@ -144,7 +144,7 @@ interest; (3) writes results to `csv` tables (`--output_mv` and `--output_taxa`)
 Mining process takes a lot of time. Check the mining results in the `sample_data/mining_results/` directory.
 
 ```{r}
-knitr::include_graphics("man/figures/mine_data.png")
+knitr::include_graphics("man/figures/mine_data_rectified.png")
 ```
 
 

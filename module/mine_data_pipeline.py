@@ -74,13 +74,13 @@ class MineData:
 
     def mine_chemical_data(self, text_type: str):
         """Synopsis: Mine chemical & mud volcano relevant data"""
-        self.mining_pipeline(text_type, self.chemistry, 'chemistry_abstract',
+        self.mining_pipeline(text_type, self.chemistry, 'chemistry',
                              self.mv_out)
-        self.mining_pipeline(text_type, self.geology, 'geology_abstract',
+        self.mining_pipeline(text_type, self.geology, 'geology',
                              self.mv_out)
-        self.mining_pipeline(text_type, self.mud_volcano, 'mv_abstract',
+        self.mining_pipeline(text_type, self.mud_volcano, 'mv',
                              self.mv_out)
-        self.mining_pipeline(text_type, self.methods, 'methods_abstract',
+        self.mining_pipeline(text_type, self.methods, 'methods',
                              self.mv_out)
 
     def mine_taxonomic_data(self, text_type: str, org_domain: str,
