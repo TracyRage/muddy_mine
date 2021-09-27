@@ -1,67 +1,67 @@
 ,s2orc_id,sulfate,sodium,potassium,chloride,carbonate,magnesium,calcium,copper,iron,zinc,cadmium,arsenic,lithium,boron,manganese,phosphate,ammonium,nitrite,nitrate,sulfide,methane,ethane,propane,butane,pentane,acetate,formate,pahs,argon,carbon_dioxyde,nitrogen,hydrogen,helium
-0,378075,['sulfate (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (6)'],-,['nitrite (2)'],"['Nitrate (1)', 'nitrate (2)']",-,['methane (5)'],-,-,-,-,-,-,-,-,-,['nitrogen (19)'],['hydrogen (2)'],-
-1,423291,-,"['sodium (3)', 'Sodium (1)']",['potassium (1)'],['chloride (1)'],['carbonate (1)'],-,-,-,"['iron (3)', 'Iron (1)']",-,-,-,-,-,-,"['Phosphate (1)', 'phosphate (3)']",-,['nitrite (1)'],"['Nitrate (1)', 'nitrate (2)']",-,['methane (1)'],-,-,-,-,-,-,-,-,-,['nitrogen (1)'],['hydrogen (1)'],-
-2,818482,['sulfate (6)'],['sodium (1)'],-,['Chloride (1)'],-,['magnesium (1)'],['calcium (1)'],-,-,-,-,-,-,-,-,-,['ammonium (8)'],-,['nitrate (5)'],-,"['methane (61)', 'CH4 (1)', 'Methane (5)']",['ethane (1)'],-,-,-,-,-,-,-,['CO2 (2)'],"['nitrogen (26)', 'Nitrogen (1)']",-,-
-3,1587067,['sulfate (5)'],['sodium (4)'],-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (1)'],-,-,-,"['sulfide (6)', 'Sulfide (1)']",['methane (4)'],-,['propane (6)'],"['butane (27)', 'Butane (4)']",-,['acetate (2)'],['formate (1)'],['naphthalene (1)'],-,-,['nitrogen (2)'],-,-
+0,378075,['sulfate (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (6)'],-,['nitrite (2)'],['nitrate (3)'],-,['methane (5)'],-,-,-,-,-,-,-,-,-,['nitrogen (19)'],['hydrogen (2)'],-
+1,423291,-,['sodium (4)'],['potassium (1)'],['chloride (1)'],['carbonate (1)'],-,-,-,['iron (4)'],-,-,-,-,-,-,['phosphate (4)'],-,['nitrite (1)'],['nitrate (3)'],-,['methane (1)'],-,-,-,-,-,-,-,-,-,['nitrogen (1)'],['hydrogen (1)'],-
+2,818482,['sulfate (6)'],['sodium (1)'],-,['chloride (1)'],-,['magnesium (1)'],['calcium (1)'],-,-,-,-,-,-,-,-,-,['ammonium (8)'],-,['nitrate (5)'],-,['methane (66)'],['ethane (1)'],-,-,-,-,-,-,-,['co2 (2)'],['nitrogen (27)'],-,-
+3,1587067,['sulfate (5)'],['sodium (4)'],-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (1)'],-,-,-,['sulfide (7)'],['methane (4)'],-,['propane (6)'],['butane (31)'],-,['acetate (2)'],['formate (1)'],['naphthalene (1)'],-,-,['nitrogen (2)'],-,-
 4,2118101,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 5,2216104,['sulfate (4)'],-,-,-,['carbonate (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,['nitrate (1)'],['sulfide (7)'],['methane (7)'],-,-,-,-,-,-,-,-,-,-,-,-
 6,2829093,-,['sodium (4)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['hydrogen (2)'],-
-7,3128887,"['sulfate (16)', 'Sulfate (2)']",-,-,"['Chloride (1)', 'chloride (7)']",-,-,-,-,['iron (3)'],-,-,-,-,-,['manganese (1)'],-,-,['nitrite (1)'],['nitrate (3)'],"['sulfide (1)', 'Sulfide (1)']","['methane (70)', 'Methane (1)']",-,-,-,-,['acetate (1)'],-,-,-,-,-,-,-
-8,4430700,-,-,-,"['chloride (2)', 'Chloride (1)']",-,['magnesium (1)'],-,-,-,['zinc (1)'],-,-,-,-,-,-,-,-,-,-,['methane (31)'],-,-,-,-,['acetate (1)'],-,-,-,-,-,-,-
-9,4773405,-,['sodium (2)'],-,-,['carbonate (2)'],-,-,-,['iron (1)'],-,-,-,-,-,-,-,['ammonium (1)'],-,-,-,-,-,-,-,-,-,-,-,['Ar (1)'],-,['nitrogen (5)'],-,-
-10,4984670,['sulfate (3)'],-,-,"['Chloride (1)', 'chloride (5)']",['carbonate (4)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"['methane (20)', 'Methane (2)']",['ethane (4)'],['propane (4)'],['butane (1)'],['pentane (1)'],-,-,-,-,-,-,['hydrogen (4)'],-
-11,6153701,-,-,-,-,['carbonate (2)'],-,-,-,-,-,-,-,-,-,-,['phosphate (2)'],-,-,-,-,"['methane (10)', 'Methane (1)']",-,-,-,-,-,-,-,-,-,-,-,-
-12,6384919,['sulfate (6)'],-,-,-,-,-,-,-,-,['zinc (2)'],-,-,-,-,-,-,-,-,-,['sulfide (11)'],['methane (24)'],['ethane (1)'],['propane (1)'],-,-,['acetate (9)'],['formate (8)'],-,-,-,"['nitrogen (2)', 'Nitrogen (1)']","['hydrogen (6)', 'Hydrogen (1)']",-
-13,7097552,-,-,-,['chloride (7)'],['carbonate (1)'],-,-,-,['Fe(III (2)'],['zinc (2)'],-,-,-,-,['Mn(IV (1)'],-,-,-,-,-,"['methane (38)', 'Methane (1)']",-,-,-,-,"['acetate (10)', 'Acetate (1)']",-,-,-,-,-,['hydrogen (4)'],-
-14,7907279,-,-,-,-,"['carbonate (7)', 'Carbonate (1)']",-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (4)'],-,-,-,-,-,-,-,-,-,-,['hydrogen (1)'],-
-15,8249528,-,-,-,-,['carbonate (19)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"['methane (8)', 'Methane (2)']",-,-,-,-,-,-,-,-,-,-,-,-
-16,8819857,"['Sulfate (2)', 'sulfate (7)']",-,-,-,-,-,-,-,"['Fe(III (16)', 'Fe(II (16)', 'iron (4)']",['zinc (1)'],-,-,-,-,"['Mn(II (1)', 'Mn(IV (1)']",-,-,-,['nitrate (2)'],"['sulfide (27)', 'Sulfide (2)']","['Methane (2)', 'methane (11)']",-,-,-,-,['acetate (1)'],-,-,-,-,-,-,-
+7,3128887,['sulfate (18)'],-,-,['chloride (8)'],-,-,-,-,['iron (3)'],-,-,-,-,-,['manganese (1)'],-,-,['nitrite (1)'],['nitrate (3)'],['sulfide (2)'],['methane (71)'],-,-,-,-,['acetate (1)'],-,-,-,-,-,-,-
+8,4430700,-,-,-,['chloride (3)'],-,['magnesium (1)'],-,-,-,['zinc (1)'],-,-,-,-,-,-,-,-,-,-,['methane (31)'],-,-,-,-,['acetate (1)'],-,-,-,-,-,-,-
+9,4773405,-,['sodium (2)'],-,-,['carbonate (2)'],-,-,-,['iron (1)'],-,-,-,-,-,-,-,['ammonium (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,['nitrogen (5)'],-,-
+10,4984670,['sulfate (3)'],-,-,['chloride (6)'],['carbonate (4)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (22)'],['ethane (4)'],['propane (4)'],['butane (1)'],['pentane (1)'],-,-,-,-,-,-,['hydrogen (4)'],-
+11,6153701,-,-,-,-,['carbonate (2)'],-,-,-,-,-,-,-,-,-,-,['phosphate (2)'],-,-,-,-,['methane (11)'],-,-,-,-,-,-,-,-,-,-,-,-
+12,6384919,['sulfate (6)'],-,-,-,-,-,-,-,-,['zinc (2)'],-,-,-,-,-,-,-,-,-,['sulfide (11)'],['methane (24)'],['ethane (1)'],['propane (1)'],-,-,['acetate (9)'],['formate (8)'],-,-,-,['nitrogen (3)'],['hydrogen (7)'],-
+13,7097552,-,-,-,['chloride (7)'],['carbonate (1)'],-,-,-,-,['zinc (2)'],-,-,-,-,-,-,-,-,-,-,['methane (39)'],-,-,-,-,['acetate (11)'],-,-,-,-,-,['hydrogen (4)'],-
+14,7907279,-,-,-,-,['carbonate (8)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (4)'],-,-,-,-,-,-,-,-,-,-,['hydrogen (1)'],-
+15,8249528,-,-,-,-,['carbonate (19)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (10)'],-,-,-,-,-,-,-,-,-,-,-,-
+16,8819857,['sulfate (9)'],-,-,-,-,-,-,-,['iron (4)'],['zinc (1)'],-,-,-,-,-,-,-,-,['nitrate (2)'],['sulfide (29)'],['methane (13)'],-,-,-,-,['acetate (1)'],-,-,-,-,-,-,-
 17,9277299,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (1)'],-,-,-,-,-,['formate (2)'],-,-,-,-,-,-
-18,9382611,['sulfate (22)'],['sodium (1)'],-,"['chloride (2)', 'Chloride (1)']",-,-,-,-,"['iron (11)', 'Fe(III (3)', 'Fe(II (1)']",-,-,-,-,-,"['manganese (4)', 'Mn(II (1)', 'Mn(IV (1)']",-,['ammonium (1)'],['nitrite (2)'],['nitrate (11)'],['sulfide (1)'],"['methane (62)', 'Methane (4)']",-,-,-,-,['acetate (6)'],['formate (1)'],-,-,-,['nitrogen (8)'],['hydrogen (1)'],['He (1)']
-19,10052410,"['sulfate (8)', 'Sulfate (2)']",-,-,['chloride (2)'],"['carbonate (10)', 'Carbonate (2)']",-,-,-,['iron (1)'],"['zinc (1)', 'Zinc (3)']",-,-,-,-,-,-,-,-,-,['sulfide (12)'],['methane (3)'],-,-,-,-,-,-,-,-,-,['nitrogen (1)'],['hydrogen (4)'],['he (1)']
-20,10441501,['sulfate (2)'],['sodium (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['sulfide (2)'],['methane (1)'],-,-,-,-,['acetate (7)'],['formate (4)'],-,-,-,['nitrogen (3)'],"['hydrogen (3)', 'Hydrogen (2)']",-
-21,12345051,-,-,-,['chloride (1)'],"['carbonate (4)', 'Carbonate (1)']",-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (4)'],-,-,-,-,-,-,-,-,-,-,['Hydrogen (1)'],-
-22,12594595,['sulfate (3)'],['sodium (3)'],-,-,-,-,-,-,"['Fe(III (7)', 'iron (2)']",-,-,-,-,-,-,-,-,-,['nitrate (4)'],['sulfide (2)'],-,-,-,-,-,['acetate (2)'],-,-,-,-,-,-,-
-23,13438555,['sulfate (8)'],['sodium (4)'],-,['chloride (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"['sulfide (2)', 'Sulfide (2)']","['methane (19)', 'METHANE (4)']",-,-,-,-,-,-,-,-,-,-,-,-
-24,14369402,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['ammonium (1)'],['nitrite (2)'],-,['sulfide (1)'],['methane (1)'],-,-,-,-,-,-,-,-,-,"['nitrogen (3)', 'N2 (1)']",['Hydrogen (1)'],-
-25,14583627,['sulfate (15)'],-,-,['chloride (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"['sulfide (8)', 'Sulfide (1)']",['methane (29)'],-,-,-,-,-,-,-,-,-,-,['hydrogen (1)'],['helium (1)']
-26,14982203,"['sulfate (24)', 'Sulfate (1)']",['sodium (2)'],-,-,['carbonate (1)'],-,-,-,-,-,-,-,-,-,-,['phosphate (1)'],['ammonium (2)'],['nitrite (1)'],['nitrate (3)'],"['sulfide (27)', 'Sulfide (1)']",['methane (22)'],-,-,-,-,['acetate (1)'],-,-,-,-,-,['hydrogen (2)'],-
+18,9382611,['sulfate (22)'],['sodium (1)'],-,['chloride (3)'],-,-,-,-,['iron (11)'],-,-,-,-,-,['manganese (4)'],-,['ammonium (1)'],['nitrite (2)'],['nitrate (11)'],['sulfide (1)'],['methane (66)'],-,-,-,-,['acetate (6)'],['formate (1)'],-,-,-,['nitrogen (8)'],['hydrogen (1)'],-
+19,10052410,['sulfate (10)'],-,-,['chloride (2)'],['carbonate (12)'],-,-,-,['iron (1)'],['zinc (4)'],-,-,-,-,-,-,-,-,-,['sulfide (12)'],['methane (3)'],-,-,-,-,-,-,-,-,-,['nitrogen (1)'],['hydrogen (4)'],-
+20,10441501,['sulfate (2)'],['sodium (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['sulfide (2)'],['methane (1)'],-,-,-,-,['acetate (7)'],['formate (4)'],-,-,-,['nitrogen (3)'],['hydrogen (5)'],-
+21,12345051,-,-,-,['chloride (1)'],['carbonate (5)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (4)'],-,-,-,-,-,-,-,-,-,-,['hydrogen (1)'],-
+22,12594595,['sulfate (3)'],['sodium (3)'],-,-,-,-,-,-,['iron (2)'],-,-,-,-,-,-,-,-,-,['nitrate (4)'],['sulfide (2)'],-,-,-,-,-,['acetate (2)'],-,-,-,-,-,-,-
+23,13438555,['sulfate (8)'],['sodium (4)'],-,['chloride (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['sulfide (4)'],['methane (23)'],-,-,-,-,-,-,-,-,-,-,-,-
+24,14369402,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['ammonium (1)'],['nitrite (2)'],-,['sulfide (1)'],['methane (1)'],-,-,-,-,-,-,-,-,-,['nitrogen (3)'],['hydrogen (1)'],-
+25,14583627,['sulfate (15)'],-,-,['chloride (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['sulfide (9)'],['methane (29)'],-,-,-,-,-,-,-,-,-,-,['hydrogen (1)'],['helium (1)']
+26,14982203,['sulfate (25)'],['sodium (2)'],-,-,['carbonate (1)'],-,-,-,-,-,-,-,-,-,-,['phosphate (1)'],['ammonium (2)'],['nitrite (1)'],['nitrate (3)'],['sulfide (28)'],['methane (22)'],-,-,-,-,['acetate (1)'],-,-,-,-,-,['hydrogen (2)'],-
 27,15514304,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-28,16773456,['sulfate (11)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['ammonium (3)'],-,['nitrate (1)'],['sulfide (1)'],"['methane (27)', 'Methane (2)']",-,-,-,-,['acetate (4)'],['formate (1)'],-,-,-,['nitrogen (1)'],['hydrogen (1)'],['helium (1)']
-29,16888850,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"['sulfide (8)', 'Sulfide (1)']",['methane (2)'],-,-,-,-,-,-,-,-,-,['nitrogen (3)'],"['hydrogen (1)', 'Hydrogen (1)']",-
+28,16773456,['sulfate (11)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['ammonium (3)'],-,['nitrate (1)'],['sulfide (1)'],['methane (29)'],-,-,-,-,['acetate (4)'],['formate (1)'],-,-,-,['nitrogen (1)'],['hydrogen (1)'],['helium (1)']
+29,16888850,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['sulfide (9)'],['methane (2)'],-,-,-,-,-,-,-,-,-,['nitrogen (3)'],['hydrogen (2)'],-
 30,17208459,-,-,-,-,-,-,-,-,['iron (1)'],-,-,-,-,-,['manganese (1)'],-,-,-,-,-,['methane (1)'],-,-,-,-,-,-,-,-,-,-,['hydrogen (1)'],-
-31,18110353,-,['sodium (2)'],-,['chloride (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"['methane (37)', 'Methane (1)']",-,-,-,-,-,-,-,-,-,-,-,-
+31,18110353,-,['sodium (2)'],-,['chloride (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (38)'],-,-,-,-,-,-,-,-,-,-,-,-
 32,19286940,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['sulfide (3)'],-,-,-,-,-,['acetate (1)'],-,-,-,-,['nitrogen (1)'],-,-
-33,19304315,"['sulfate (48)', 'Sulfate (4)']",-,-,"['chloride (22)', 'Chloride (2)']",-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['sulfide (4)'],"['Methane (7)', 'methane (45)']","['Ethane (2)', 'ethane (1)']",['propane (3)'],-,-,['acetate (2)'],-,-,['argon (1)'],-,['nitrogen (2)'],-,-
-34,19394643,['sulfate (1)'],-,-,-,['carbonate (5)'],-,-,-,['iron (2)'],-,-,-,-,-,-,-,-,-,-,-,"['methane (161)', 'Methane (21)']",['ethane (1)'],['propane (1)'],['butane (1)'],-,['acetate (1)'],-,-,-,-,-,['hydrogen (2)'],"['he (2)', 'He (1)']"
-35,19646536,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (6)'],-,-,-,-,-,-,-,-,['CO2 (3)'],-,-,['He (1)']
-36,20023799,"['sulfate (2)', 'Sulfate (1)']",-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['sulfide (4)'],"['Methane (1)', 'methane (49)']",-,-,-,-,-,-,-,"['argon (2)', 'Ar (12)']",-,"['nitrogen (16)', 'Nitrogen (1)']",-,-
-37,21490211,"['sulfate (5)', 'Sulfate (1)']",['sodium (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"['methane (38)', 'Methane (1)']",-,-,-,-,['acetate (2)'],-,-,-,-,-,-,['He (2)']
+33,19304315,['sulfate (52)'],-,-,['chloride (24)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['sulfide (4)'],['methane (52)'],['ethane (3)'],['propane (3)'],-,-,['acetate (2)'],-,-,['argon (1)'],-,['nitrogen (2)'],-,-
+34,19394643,['sulfate (1)'],-,-,-,['carbonate (5)'],-,-,-,['iron (2)'],-,-,-,-,-,-,-,-,-,-,-,['methane (182)'],['ethane (1)'],['propane (1)'],['butane (1)'],-,['acetate (1)'],-,-,-,-,-,['hydrogen (2)'],-
+35,19646536,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (6)'],-,-,-,-,-,-,-,-,['co2 (3)'],-,-,-
+36,20023799,['sulfate (3)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['sulfide (4)'],['methane (50)'],-,-,-,-,-,-,-,['argon (2)'],-,['nitrogen (17)'],-,-
+37,21490211,['sulfate (6)'],['sodium (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (39)'],-,-,-,-,['acetate (2)'],-,-,-,-,-,-,-
 38,22414992,-,-,-,-,['carbonate (10)'],-,-,['copper (1)'],-,-,-,-,-,-,-,-,-,-,-,-,['methane (11)'],-,-,-,-,['acetate (1)'],-,-,-,-,-,['hydrogen (1)'],['helium (2)']
-39,24389953,"['sulfate (4)', 'Sulfate (1)']",-,-,['chloride (4)'],['carbonate (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"['methane (22)', 'Methane (3)']",['ethane (1)'],-,-,-,"['acetate (6)', 'Acetate (1)']",-,-,-,-,['nitrogen (1)'],['hydrogen (1)'],['Helium (1)']
-40,26654892,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (1)'],-,['nitrite (1)'],['Nitrate (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-
-41,31592443,['sulfate (1)'],-,['potassium (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"['methane (1)', 'Methane (1)']",-,-,-,-,['acetate (1)'],-,-,-,-,-,-,['Helium (1)']
+39,24389953,['sulfate (5)'],-,-,['chloride (4)'],['carbonate (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (25)'],['ethane (1)'],-,-,-,['acetate (7)'],-,-,-,-,['nitrogen (1)'],['hydrogen (1)'],['helium (1)']
+40,26654892,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (1)'],-,['nitrite (1)'],['nitrate (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-
+41,31592443,['sulfate (1)'],-,['potassium (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (2)'],-,-,-,-,['acetate (1)'],-,-,-,-,-,-,['helium (1)']
 42,34107345,-,-,-,-,-,-,-,['copper (1)'],-,['zinc (1)'],['cadmium (1)'],['arsenic (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 43,35116371,-,['sodium (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (2)'],-,-,['nitrate (1)'],-,-,-,-,-,-,-,-,-,-,-,-,['hydrogen (1)'],-
-44,38728909,-,['sodium (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (2)'],-,-,"['nitrate (1)', 'Nitrate (1)']",-,['methane (1)'],-,-,-,-,-,-,-,-,-,-,['hydrogen (1)'],-
+44,38728909,-,['sodium (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (2)'],-,-,['nitrate (2)'],-,['methane (1)'],-,-,-,-,-,-,-,-,-,-,['hydrogen (1)'],-
 45,42717529,-,-,-,-,-,-,-,['copper (1)'],-,-,-,['arsenic (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-46,46855510,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['CO2 (7)'],-,-,-
-47,49214293,['sulfate (5)'],-,-,-,['carbonate (1)'],-,-,-,-,-,-,-,['lithium (1)'],-,-,-,-,-,-,-,"['methane (47)', 'CH4 (31)']",['ethane (5)'],['propane (2)'],-,-,['acetate (25)'],['formate (1)'],-,"['AR (4)', 'Ar (1)']",['CO2 (3)'],-,"['hydrogen (6)', 'Hydrogen (1)']",-
-48,52112134,"['sulfate (12)', 'Sulfate (2)']",-,-,-,-,-,-,-,-,['zinc (1)'],-,-,-,-,-,-,['ammonium (1)'],-,-,"['sulfide (6)', 'Sulfide (1)']",['methane (31)'],-,-,-,-,['acetate (1)'],-,-,-,-,-,-,-
-49,52131258,['sulfate (47)'],-,-,"['chloride (10)', 'Chloride (2)']",-,-,-,-,['iron (1)'],-,-,-,-,-,-,-,-,-,['nitrate (2)'],"['sulfide (23)', 'Sulfide (3)']","['methane (38)', 'Methane (2)']",-,-,-,-,['acetate (2)'],-,-,-,-,['nitrogen (1)'],['hydrogen (2)'],-
-50,195185567,"['sulfate (24)', 'Sulfate (1)']",['sodium (2)'],"['potassium (6)', 'Potassium (1)']","['chloride (19)', 'Chloride (1)']",-,-,-,-,-,-,-,-,"['Lithium (2)', 'lithium (6)']","['boron (6)', 'Boron (2)']",-,-,-,['nitrite (1)'],-,['sulfide (1)'],"['methane (42)', 'Methane (5)']",-,-,-,-,['acetate (1)'],['formate (1)'],-,-,-,['nitrogen (2)'],['hydrogen (1)'],-
+46,46855510,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['co2 (7)'],-,-,-
+47,49214293,['sulfate (5)'],-,-,-,['carbonate (1)'],-,-,-,-,-,-,-,['lithium (1)'],-,-,-,-,-,-,-,['methane (47)'],['ethane (5)'],['propane (2)'],-,-,['acetate (25)'],['formate (1)'],-,-,['co2 (3)'],-,['hydrogen (7)'],-
+48,52112134,['sulfate (14)'],-,-,-,-,-,-,-,-,['zinc (1)'],-,-,-,-,-,-,['ammonium (1)'],-,-,['sulfide (7)'],['methane (31)'],-,-,-,-,['acetate (1)'],-,-,-,-,-,-,-
+49,52131258,['sulfate (47)'],-,-,['chloride (12)'],-,-,-,-,['iron (1)'],-,-,-,-,-,-,-,-,-,['nitrate (2)'],['sulfide (26)'],['methane (40)'],-,-,-,-,['acetate (2)'],-,-,-,-,['nitrogen (1)'],['hydrogen (2)'],-
+50,195185567,['sulfate (25)'],['sodium (2)'],['potassium (7)'],['chloride (20)'],-,-,-,-,-,-,-,-,['lithium (8)'],['boron (8)'],-,-,-,['nitrite (1)'],-,['sulfide (1)'],['methane (47)'],-,-,-,-,['acetate (1)'],['formate (1)'],-,-,-,['nitrogen (2)'],['hydrogen (1)'],-
 51,206164693,-,['sodium (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (1)'],-,-,['nitrate (4)'],-,-,-,-,-,-,-,-,-,-,-,-,['hydrogen (1)'],-
 52,206723511,['sulfate (7)'],['sodium (1)'],-,['chloride (5)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (1)'],-,-,-,-,-,-,-,-,-,-,-,-
-53,207696802,-,-,-,-,"['carbonate (2)', 'Carbonate (1)']",-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (2)'],-,-,-,-,-,-,-,-,-,-,-,-
-54,208279838,['sulfate (7)'],-,-,"['chloride (1)', 'Chloride (1)']",-,-,-,-,-,-,-,-,-,-,-,-,-,-,['nitrate (1)'],['sulfide (3)'],"['Methane (3)', 'methane (23)', 'CH4 (5)']",-,-,-,-,-,-,-,-,-,-,-,-
-55,210195508,['sulfate (8)'],['sodium (6)'],['potassium (4)'],['chloride (8)'],['carbonate (2)'],['magnesium (5)'],['calcium (3)'],-,-,-,-,-,"['lithium (6)', 'Lithium (1)']",['boron (7)'],-,-,-,-,-,-,['methane (24)'],-,-,-,-,-,-,-,-,-,['nitrogen (1)'],"['hydrogen (6)', 'Hydrogen (1)']",-
-56,210914727,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (1)'],-,-,-,-,-,-,"['phenanthrene (1)', 'pyrene (1)']",-,-,-,['hydrogen (2)'],['Helium (1)']
-57,214827724,"['sulfate (5)', 'Sulfate (1)']",['sodium (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"['methane (38)', 'Methane (1)']",-,-,-,-,['acetate (2)'],-,-,-,-,-,-,['He (2)']
-58,214917229,['sulfate (22)'],['sodium (1)'],-,"['chloride (2)', 'Chloride (1)']",-,-,-,-,"['iron (11)', 'Fe(III (3)', 'Fe(II (1)']",-,-,-,-,-,"['manganese (4)', 'Mn(II (1)', 'Mn(IV (1)']",-,['ammonium (1)'],['nitrite (2)'],['nitrate (11)'],['sulfide (1)'],"['methane (62)', 'Methane (4)']",-,-,-,-,['acetate (6)'],['formate (1)'],-,-,-,['nitrogen (8)'],['hydrogen (1)'],['He (1)']
-59,214924177,['sulfate (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (6)'],-,['nitrite (2)'],"['Nitrate (1)', 'nitrate (2)']",-,['methane (5)'],-,-,-,-,-,-,-,-,-,['nitrogen (19)'],['hydrogen (2)'],-
-60,215035312,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"['methane (11)', 'CH4 (15)', 'Methane (1)']",-,-,-,-,['acetate (3)'],['formate (2)'],-,-,['CO2 (1)'],-,['hydrogen (2)'],-
-61,215076876,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (6)'],-,-,-,-,-,-,-,-,['CO2 (3)'],-,-,['He (1)']
-62,215124414,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['ammonium (1)'],['nitrite (2)'],-,['sulfide (1)'],['methane (1)'],-,-,-,-,-,-,-,-,-,"['nitrogen (3)', 'N2 (1)']",['Hydrogen (1)'],-
-63,215213250,-,"['sodium (3)', 'Sodium (1)']",['potassium (1)'],['chloride (1)'],['carbonate (1)'],-,-,-,"['iron (3)', 'Iron (1)']",-,-,-,-,-,-,"['Phosphate (1)', 'phosphate (3)']",-,['nitrite (1)'],"['Nitrate (1)', 'nitrate (2)']",-,['methane (1)'],-,-,-,-,-,-,-,-,-,['nitrogen (1)'],['hydrogen (1)'],-
-64,215265781,"['sulfate (24)', 'Sulfate (1)']",['sodium (2)'],"['potassium (6)', 'Potassium (1)']","['chloride (19)', 'Chloride (1)']",-,-,-,-,-,-,-,-,"['Lithium (2)', 'lithium (6)']","['boron (6)', 'Boron (2)']",-,-,-,['nitrite (1)'],-,['sulfide (1)'],"['methane (42)', 'Methane (5)']",-,-,-,-,['acetate (1)'],['formate (1)'],-,-,-,['nitrogen (2)'],['hydrogen (1)'],-
+53,207696802,-,-,-,-,['carbonate (3)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (2)'],-,-,-,-,-,-,-,-,-,-,-,-
+54,208279838,['sulfate (7)'],-,-,['chloride (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,['nitrate (1)'],['sulfide (3)'],['methane (26)'],-,-,-,-,-,-,-,-,-,-,-,-
+55,210195508,['sulfate (8)'],['sodium (6)'],['potassium (4)'],['chloride (8)'],['carbonate (2)'],['magnesium (5)'],['calcium (3)'],-,-,-,-,-,['lithium (7)'],['boron (7)'],-,-,-,-,-,-,['methane (24)'],-,-,-,-,-,-,-,-,-,['nitrogen (1)'],['hydrogen (7)'],-
+56,210914727,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (1)'],-,-,-,-,-,-,"['phenanthrene (1)', 'pyrene (1)']",-,-,-,['hydrogen (2)'],['helium (1)']
+57,214827724,['sulfate (6)'],['sodium (1)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (39)'],-,-,-,-,['acetate (2)'],-,-,-,-,-,-,-
+58,214917229,['sulfate (22)'],['sodium (1)'],-,['chloride (3)'],-,-,-,-,['iron (11)'],-,-,-,-,-,['manganese (4)'],-,['ammonium (1)'],['nitrite (2)'],['nitrate (11)'],['sulfide (1)'],['methane (66)'],-,-,-,-,['acetate (6)'],['formate (1)'],-,-,-,['nitrogen (8)'],['hydrogen (1)'],-
+59,214924177,['sulfate (2)'],-,-,-,-,-,-,-,-,-,-,-,-,-,-,['phosphate (6)'],-,['nitrite (2)'],['nitrate (3)'],-,['methane (5)'],-,-,-,-,-,-,-,-,-,['nitrogen (19)'],['hydrogen (2)'],-
+60,215035312,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (12)'],-,-,-,-,['acetate (3)'],['formate (2)'],-,-,['co2 (1)'],-,['hydrogen (2)'],-
+61,215076876,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (6)'],-,-,-,-,-,-,-,-,['co2 (3)'],-,-,-
+62,215124414,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['ammonium (1)'],['nitrite (2)'],-,['sulfide (1)'],['methane (1)'],-,-,-,-,-,-,-,-,-,['nitrogen (3)'],['hydrogen (1)'],-
+63,215213250,-,['sodium (4)'],['potassium (1)'],['chloride (1)'],['carbonate (1)'],-,-,-,['iron (4)'],-,-,-,-,-,-,['phosphate (4)'],-,['nitrite (1)'],['nitrate (3)'],-,['methane (1)'],-,-,-,-,-,-,-,-,-,['nitrogen (1)'],['hydrogen (1)'],-
+64,215265781,['sulfate (25)'],['sodium (2)'],['potassium (7)'],['chloride (20)'],-,-,-,-,-,-,-,-,['lithium (8)'],['boron (8)'],-,-,-,['nitrite (1)'],-,['sulfide (1)'],['methane (47)'],-,-,-,-,['acetate (1)'],['formate (1)'],-,-,-,['nitrogen (2)'],['hydrogen (1)'],-
 65,215379686,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,['methane (1)'],-,-,-,-,-,['formate (2)'],-,-,-,-,-,-
