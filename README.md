@@ -40,6 +40,12 @@ being the first biologically-oriented mud volcano database.
 Check muddy\_db web app:
 [**muddy\_db**](https://muddy-db.shinyapps.io/muddy_db/)
 
+Check the published [PeerJ
+article](https://doi.org/10.7717/peerj.12463).
+
+Cite this work
+`Remizovschi A, Carpa R. 2021. Biologically-oriented mud volcano database: muddy_db. PeerJ 9:e12463 https://doi.org/10.7717/peerj.12463`.
+
 ### Methods
 
 In order to aggregate biologically-oriented tokens, we used
